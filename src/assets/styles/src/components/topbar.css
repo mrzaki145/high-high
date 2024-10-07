@@ -1,0 +1,20 @@
+.topbar {
+  @apply sticky inset-x-0 top-0 z-50 flex items-center justify-end gap-4 bg-white px-4 py-3.5 lg:px-6;
+  box-shadow: 0px 2px 10px rgba(92, 92, 97, 0.02);
+}
+
+.lang-dropdown {
+  @apply inline-flex items-center gap-2 px-1.5 text-sm;
+}
+
+.lang-dropdown svg {
+  @apply size-4 shrink-0;
+}
+
+.notifications-dropdown {
+  @apply relative shrink-0;
+}
+
+.notifications-dropdown svg {
+  @apply size-5 shrink-0;
+}

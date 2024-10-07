@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High-High &mdash; Login</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+
+    <!-- js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/preline@2.5.0/dist/preline.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="flex min-h-dvh">
+        <div class="relative flex-1 max-lg:hidden">
+          <img
+            src="./assets/images/logo-vertical.svg"
+            class="absolute left-1/2 top-20 -translate-x-1/2"
+            alt=""
+          />
+          <video
+            src="./assets/videos/auth.mp4"
+            autoplay
+            loop
+            class="h-full w-full object-cover object-center"
+          ></video>
+        </div>
+
+        <div class="flex flex-1 flex-col items-center gap-20">
+          <div
+            class="flex w-full items-center justify-between border-gray-100 px-6 py-4 max-lg:border-b"
+          >
+            <img src="./assets/images/logo.svg" class="lg:opacity-0" alt="" />
+
+            <div class="hs-dropdown relative inline-flex">
+              <button
+                type="button"
+                class="hs-dropdown-toggle inline-flex items-center gap-1.5"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                aria-label="Dropdown"
+              >
+                <svg class="size-4">
+                  <use
+                    href="./assets/images/icons/sprite.svg#global-line"
+                  ></use>
+                </svg>
+                EN
+                <svg class="size-4">
+                  <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu duration mt-2 hidden min-w-24 rounded-lg bg-white opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="hs-dropdown-default"
+              >
+                <div class="space-y-0.5 p-1">
+                  <a
+                    class="block w-full rounded-md px-3 py-2 text-sm text-gray-800 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none"
+                    href="#"
+                  >
+                    AR
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full max-w-[400px] px-6 lg:pt-40">
+            <header class="mb-6 w-full">
+              <h1 class="mb-2 font-bold md:text-lg lg:text-xl">تسجيل الدخول</h1>
+              <p>من فضلك سجل دخول الآن</p>
+            </header>
+
+            <form action="./check-email.html" class="form mb-8">
+              <div class="form__group">
+                <div class="flex items-end gap-2">
+                  <div class="form__field">
+                    <label class="form__label" for="tel">رقم الهاتف *</label>
+                    <input
+                      id="tel"
+                      type="tel"
+                      class="form__input"
+                      placeholder="xxxx xxxx xxxx xxxx"
+                    />
+                  </div>
+
+                  <div class="form__field max-w-32 flex-auto">
+                    <!-- Select -->
+                    <select
+                      id="countrySelect"
+                      data-hs-select='{
+                        "placeholder": "Select country...",
+                        "toggleTag": "<button type=\"button\" aria-expanded=\"false\"><span class=\"h-3 w-4 shrink-0\" data-icon></span><span class=\"text-gray-800 \" data-title></span></button>",
+                        "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative flex items-center h-10 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm focus:outline-none focus:border-primary",
+                        "dropdownClasses": "mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300",
+                        "optionClasses": "py-2 px-4 w-full text-sm text-gray-800 cursor-pointer hover:bg-gray-50 rounded-md focus:outline-none focus:bg-gray-50",
+                        "optionTemplate": "<div><div class=\"flex items-center\"><div class=\"me-2 h-3 w-4 rounded-md\" data-icon></div><div class=\"text-gray-800 \" data-title></div></div></div>",
+                        "extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2\"><svg class=\"size-4\"><use href=\"./assets/images/icons/sprite.svg#arrow-down\"></use></svg></div>"
+                      }'
+                      class="hidden"
+                    ></select>
+                    <!-- End Select -->
+                  </div>
+                </div>
+
+                <div class="form__field">
+                  <label class="form__label" for="tel"
+                    >الرمز المرئي <span>*</span></label
+                  >
+                  <div
+                    class="g-recaptcha"
+                    data-sitekey="your_site_key"
+                    data-size="600"
+                  ></div>
+                </div>
+
+                <button class="btn btn--primary btn--md w-full" type="submit">
+                  تسجيل الدخول
+                </button>
+              </div>
+            </form>
+
+            <div class="w-full space-y-8">
+              <div class="relative flex items-center justify-center">
+                <hr class="absolute inset-x-0 h-px w-full border-gray-100" />
+                <span class="relative bg-white px-4 text-gray-400">أو</span>
+              </div>
+
+              <a
+                href="./login-with-phone.html"
+                class="btn btn--gray btn--md w-full"
+              >
+                <svg class="size-4">
+                  <use href="./assets/images/icons/sprite.svg#envelope"></use>
+                </svg>
+
+                سجل دخول عبر البريد
+
+                <svg class="size-4">
+                  <use
+                    href="./assets/images/icons/sprite.svg#arrow-left-line"
+                  ></use>
+                </svg>
+              </a>
+
+              <p class="text-center text-xs text-gray">
+                ليس لديك حساب ؟
+                <a href="./sign-up.html" class="text-primary">حساب جديد</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-auto w-full border-t border-gray-100 py-2">
+            <p class="text-center text-sm text-gray">
+              جميع الحقوق محفوظة لRQM SoLUTION 2024
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+
+    <script>
+      window.addEventListener("load", () =>
+        requestAnimationFrame(() => {
+          (function () {
+            const select = window.HSSelect.getInstance("#countrySelect");
+
+            fetch("./assets/countryCodes.json")
+              .then((response) => response.json())
+              .then((data) => {
+                select.addOption(data);
+              });
+          })();
+        }),
+      );
+    </script>
+  </body>
+</html>

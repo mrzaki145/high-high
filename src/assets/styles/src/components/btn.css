@@ -1,0 +1,52 @@
+.btn {
+  @apply inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-md border text-center text-sm transition-colors disabled:cursor-not-allowed disabled:bg-opacity-85;
+}
+
+.btn--sm {
+  @apply h-9 px-4;
+}
+.btn--md {
+  @apply h-10 px-6;
+}
+.btn--lg {
+  @apply h-11 px-8;
+}
+
+.btn--primary {
+  @apply border-primary bg-primary text-white hover:border-primary hover:bg-white hover:text-primary;
+}
+.btn--black {
+  @apply border-black bg-black text-white hover:border-black hover:bg-transparent hover:text-black;
+}
+.btn--gray {
+  @apply border-gray-100 bg-gray-50 text-black hover:bg-gray-100;
+}
+.btn--blue {
+  @apply border-blue-100/65 bg-blue text-white hover:bg-blue-200/50 hover:text-blue;
+}
+.btn--outline {
+  @apply hover:bg-black-100;
+}
+.btn--transparent {
+  @apply border-transparent text-black;
+}
+
+.btn svg {
+  @apply size-4 transition-colors;
+}
+.btn svg.arrow {
+  @apply ltr:rotate-180;
+}
+
+.btn--primary svg {
+  @apply text-white;
+}
+.btn--primary:hover svg {
+  @apply text-primary;
+}
+.btn--black svg {
+  @apply text-white;
+}
+.btn--black:hover svg {
+  @apply text-black;
+}

@@ -1,0 +1,19 @@
+.breadcrump {
+  @apply flex items-center gap-2 whitespace-nowrap;
+}
+
+.breadcrump__item {
+  @apply flex items-center gap-2;
+}
+
+.breadcrump__link {
+  @apply text-xxs flex items-center text-black transition-colors hover:text-primary aria-current:pointer-events-none aria-current:text-primary lg:text-xs;
+}
+
+.breadcrump__item svg {
+  @apply size-3 text-gray;
+}
+
+.breadcrump__item:last-child svg {
+  @apply hidden;
+}

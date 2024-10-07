@@ -1,0 +1,79 @@
+.table-header {
+  @apply mb-6 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between;
+}
+
+.table-header__title {
+  @apply font-semibold;
+}
+
+.date-picker {
+  @apply relative flex flex-col gap-2 text-sm lg:flex-row lg:items-center;
+}
+
+.date-picker span {
+  @apply shrink-0;
+}
+
+.date-picker input {
+  @apply block  flex-1 border-none bg-transparent text-sm outline-none;
+}
+
+.date-picker .input-wrapper {
+  @apply flex w-full items-center gap-2 rounded-lg  bg-gray-50 px-5 py-3 lg:min-w-[255px];
+}
+
+/* table */
+
+.table-wrapper {
+  @apply min-w-full overflow-hidden;
+}
+
+.table {
+  @apply w-full min-w-full text-sm;
+}
+
+.table th {
+  @apply whitespace-nowrap px-6 py-2 text-sm font-bold;
+}
+
+.table .th {
+  @apply mx-auto w-fit text-end;
+}
+
+.table .th__title {
+  @apply flex items-center justify-center gap-1 whitespace-nowrap;
+}
+
+.table .th__title img {
+  @apply size-4 shrink-0;
+}
+
+.table .th span {
+  @apply text-xs font-normal;
+}
+
+.table tbody {
+  @apply divide-y divide-gray-100;
+}
+
+.table td {
+  @apply px-6 pb-6 pt-4 text-center;
+}
+
+/* pagination */
+
+.table-pagination {
+  @apply flex items-center justify-between text-xs;
+}
+
+.table-pagination p {
+  @apply text-gray-300;
+}
+
+.pagination {
+  @apply flex items-center gap-2;
+}
+
+.pagination select {
+  @apply h-8 min-w-12 rounded-lg border border-gray-100 bg-white ps-2 text-start;
+}

@@ -1,0 +1,5 @@
+.swiper-pagination {
+  --swiper-pagination-color: #71717a;
+
+  @apply static mt-8;
+}

@@ -1,0 +1,56 @@
+.packages-list {
+  @apply grid gap-4 md:grid-cols-2 lg:grid-cols-3;
+}
+
+.package {
+  @apply relative flex flex-col justify-between gap-7 rounded-3xl border border-gray-200 px-4 py-5;
+}
+
+.package__badge {
+  @apply absolute start-1/2 top-0 inline-flex h-6 w-fit -translate-y-1/2 translate-x-1/2 items-center justify-center gap-1 rounded-full bg-primary px-2 text-xs text-white;
+}
+.package__badge svg {
+  @apply size-3 text-white;
+}
+
+.package__header {
+  @apply mb-7;
+}
+.package__header h2 {
+  @apply mb-2 text-lg font-bold lg:text-xl;
+}
+
+.package__header p {
+  @apply text-sm text-gray-400;
+}
+
+.package__features {
+  @apply space-y-1;
+}
+
+.package__features li {
+  @apply flex items-center gap-2 rounded px-3 py-2.5 text-sm odd:bg-gray-50 even:bg-white;
+}
+.package__features svg {
+  @apply size-4;
+}
+.package__features svg.ticket {
+  @apply text-primary;
+}
+.package__features svg.info {
+  @apply text-blue;
+}
+
+.package__btn {
+  @apply inline-flex h-10 w-full items-center justify-center rounded-full bg-gray-100/50 text-center text-sm transition-colors transition-opacity hover:opacity-75;
+}
+
+/* pro */
+
+.package.pro {
+  @apply border-primary;
+}
+
+.package.pro .package__btn {
+  @apply bg-primary text-white;
+}

@@ -1,0 +1,26 @@
+.badge {
+  @apply inline-flex h-6 items-center justify-center gap-1 whitespace-nowrap rounded-md px-3 text-xs;
+}
+.badge--success {
+  @apply bg-green/15 text-green;
+}
+.badge--danger {
+  @apply bg-red/15 text-red;
+}
+.badge--warning {
+  @apply bg-primary/15 text-primary;
+}
+
+.badge svg {
+  @apply size-4;
+}
+
+/* .badge--success svg {
+  @apply text-green;
+}
+.badge--danger svg {
+  @apply text-red;
+}
+.badge--warning svg {
+  @apply text-primary;
+} */

@@ -1,0 +1,131 @@
+.form {
+  @apply mx-auto w-full space-y-6;
+}
+
+.form__group {
+  @apply space-y-4 lg:space-y-6;
+}
+.form__group--sm {
+  @apply space-y-2 lg:space-y-4;
+}
+
+.form__row {
+  @apply flex flex-col gap-4 lg:flex-row;
+}
+
+.form__field {
+  @apply w-full flex-1 space-y-1.5;
+}
+
+/* .form__line {
+  @apply flex flex-col items-center gap-2 lg:flex-row lg:justify-between;
+}
+.form__line .form__label {
+  @apply flex-1;
+}
+.form__line .form__input {
+  @apply w-full lg:max-w-[275px];
+} */
+
+.form__label {
+  @apply inline-block text-sm font-medium;
+}
+.form__label span {
+  @apply text-red;
+}
+
+.form__input {
+  @apply block h-10 w-full rounded-md border border-solid border-gray-200 bg-transparent bg-white p-2 text-sm text-black transition-colors focus:border-primary focus:outline-none;
+}
+
+.form__input[type="file"] {
+  @apply p-0 text-sm file:me-4 file:border-0 file:bg-gray-50 file:px-4 file:py-3;
+}
+
+.form__input[type="tel"] {
+  @apply text-end ltr:text-start;
+}
+
+.form__checkbox {
+  @apply flex items-center gap-3;
+}
+.form__checkbox input {
+  @apply sr-only;
+}
+.form__checkbox .form__checkbox-icon {
+  @apply size-5 shrink-0 rounded-md border border-gray-200 bg-center bg-no-repeat transition-colors;
+  background-size: 60% 60%;
+}
+.form__checkbox .form__checkbox-icon.sm {
+  @apply size-4;
+}
+.form__checkbox .form__checkbox-icon.round-full {
+  @apply rounded-full;
+}
+.form__checkbox input:checked ~ .form__checkbox-icon {
+  @apply border-yellow bg-yellow;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='14px' height='10px' viewBox='0 0 14 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 59.1 (86144) - https://sketch.com --%3E%3Ctitle%3Echeck%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='ios_modification' transform='translate(-27.000000, -191.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cg id='Group-Copy' transform='translate(0.000000, 164.000000)'%3E%3Cg id='ic-check-18px' transform='translate(25.000000, 23.000000)'%3E%3Cpolygon id='check' points='6.61 11.89 3.5 8.78 2.44 9.84 6.61 14 15.56 5.05 14.5 4'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.form__checkbox {
+  @apply select-none text-xs md:text-sm;
+}
+
+.form__radio {
+  @apply flex items-center gap-2;
+}
+
+.form__radio input {
+  @apply size-4 accent-black;
+}
+
+.form__error {
+  @apply text-sm text-red;
+}
+
+.form .btn {
+  @apply text-sm;
+}
+
+textarea.form__input {
+  @apply resize-none p-2;
+}
+
+select {
+  @apply appearance-none;
+  background-image: url("./../images/icons/arrow-down.svg");
+  background-size: 18px;
+  background-position: center left 10px;
+  background-repeat: no-repeat;
+}
+[dir="ltr"] select {
+  background-position: center right 10px;
+}
+
+/* country selector */
+
+.country-select {
+  @apply flex w-full items-center justify-center gap-2 rounded-lg border border-gray-50 bg-gray-50 p-2 text-black focus:outline-none;
+}
+.country-select select {
+  @apply max-w-[5ch] appearance-none border-none bg-transparent outline-none;
+}
+.country-select img {
+  width: 20px;
+  height: 15px;
+  border-radius: 4px;
+}
+
+/* otp */
+
+.otp {
+  @apply flex items-center justify-between gap-4;
+}
+
+.otp__input {
+  @apply block h-12 w-full rounded-xl border border-gray-100 p-2 text-center text-xl text-black-700 focus:outline-none;
+}
+
+.otp--sm .otp__input {
+  @apply w-full text-3xl;
+}

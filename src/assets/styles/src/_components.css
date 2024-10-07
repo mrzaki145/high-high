@@ -1,0 +1,104 @@
+@import "tailwindcss/components";
+
+@import "./components/btn.css";
+@import "./components/form.css";
+@import "./components/breadcrumb.css";
+@import "./components/table.css";
+@import "./components/badge.css";
+
+@import "./components/sidebar.css";
+@import "./components/topbar.css";
+@import "./components/main-section.css";
+
+@import "./components/statictics-cards.css";
+@import "./components/package-card.css";
+
+/* ----------------------------- */
+
+/* twofa */
+
+.twofa-box {
+  @apply flex items-center gap-4 rounded-lg bg-gray-50 py-4 pe-4 ps-6 transition-shadow hover:shadow-lg;
+}
+
+.twofa-box__icon {
+  @apply size-6 shrink-0;
+}
+
+.twofa-box__content {
+  @apply flex-1 space-x-1 text-start;
+}
+.twofa-box__content p:first-child {
+  @apply text-lg font-medium;
+}
+.twofa-box__content p:last-child {
+  @apply text-sm font-normal text-gray-600;
+}
+
+.twofa-box__arrow {
+  @apply size-8 text-black;
+}
+
+/* counter */
+
+.counter {
+  @apply flex items-center gap-3 rounded-full bg-gray-50 p-2;
+}
+
+.counter button {
+  @apply inline-flex size-6 items-center justify-center rounded-full border border-black transition-colors hover:bg-black hover:text-white;
+}
+
+.counter svg {
+  @apply size-3;
+}
+
+.counter .value {
+  @apply text-xs;
+}
+
+/* ad-preview */
+
+.ad-preview {
+  @apply rounded-lg bg-gray-50 p-3;
+}
+
+.ad-preview__header {
+  @apply mb-4 flex items-center justify-between;
+}
+
+.ad-preview__user {
+  @apply flex gap-2;
+}
+
+.ad-preview__user-img {
+  @apply size-8 rounded-full object-cover object-center;
+}
+
+.ad-preview__user-name {
+  @apply text-xs font-semibold;
+}
+
+.ad-preview__body {
+  @apply mb-4;
+}
+
+.ad-preview__body p {
+  @apply text-xs;
+}
+
+.ad-preview__img {
+  @apply mb-2 h-[240px] w-full rounded-lg object-cover object-center;
+}
+
+.ad-preview__footer {
+  @apply flex items-center justify-between;
+}
+
+.ad-preview__footer button {
+  @apply inline-flex items-center gap-1 rounded-full px-2 py-1 text-xs aria-pressed:text-yellow;
+}
+
+.ad-preview__footer button svg {
+  @apply size-4;
+}

@@ -1,0 +1,1674 @@
+[
+  {
+    "title": "93+",
+    "val": "93",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/af.png' alt='Afghanistan' />"
+    }
+  },
+  {
+    "title": "355+",
+    "val": "355",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/al.png' alt='Albania' />"
+    }
+  },
+  {
+    "title": "213+",
+    "val": "213",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/dz.png' alt='Algeria' />"
+    }
+  },
+  {
+    "title": "376+",
+    "val": "376",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ad.png' alt='Andorra' />"
+    }
+  },
+  {
+    "title": "244+",
+    "val": "244",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ao.png' alt='Angola' />"
+    }
+  },
+  {
+    "title": "1268+",
+    "val": "1268",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ag.png' alt='Antigua and Barbuda' />"
+    }
+  },
+  {
+    "title": "54+",
+    "val": "54",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ar.png' alt='Argentina' />"
+    }
+  },
+  {
+    "title": "374+",
+    "val": "374",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/am.png' alt='Armenia' />"
+    }
+  },
+  {
+    "title": "61+",
+    "val": "61",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/au.png' alt='Australia' />"
+    }
+  },
+  {
+    "title": "43+",
+    "val": "43",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/at.png' alt='Austria' />"
+    }
+  },
+  {
+    "title": "994+",
+    "val": "994",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/az.png' alt='Azerbaijan' />"
+    }
+  },
+  {
+    "title": "1242+",
+    "val": "1242",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/bs.png' alt='Bahamas' />"
+    }
+  },
+  {
+    "title": "973+",
+    "val": "973",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/bh.png' alt='Bahrain' />"
+    }
+  },
+  {
+    "title": "880+",
+    "val": "880",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/bd.png' alt='Bangladesh' />"
+    }
+  },
+  {
+    "title": "1246+",
+    "val": "1246",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/bb.png' alt='Barbados' />"
+    }
+  },
+  {
+    "title": "375+",
+    "val": "375",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/by.png' alt='Belarus' />"
+    }
+  },
+  {
+    "title": "32+",
+    "val": "32",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/be.png' alt='Belgium' />"
+    }
+  },
+  {
+    "title": "501+",
+    "val": "501",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/bz.png' alt='Belize' />"
+    }
+  },
+  {
+    "title": "229+",
+    "val": "229",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/bj.png' alt='Benin' />"
+    }
+  },
+  {
+    "title": "1441+",
+    "val": "1441",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/bm.png' alt='Bermuda' />"
+    }
+  },
+  {
+    "title": "975+",
+    "val": "975",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/bt.png' alt='Bhutan' />"
+    }
+  },
+  {
+    "title": "591+",
+    "val": "591",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/bo.png' alt='Bolivia' />"
+    }
+  },
+  {
+    "title": "387+",
+    "val": "387",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ba.png' alt='Bosnia and Herzegovina' />"
+    }
+  },
+  {
+    "title": "267+",
+    "val": "267",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/bw.png' alt='Botswana' />"
+    }
+  },
+  {
+    "title": "55+",
+    "val": "55",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/br.png' alt='Brazil' />"
+    }
+  },
+  {
+    "title": "673+",
+    "val": "673",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/bn.png' alt='Brunei' />"
+    }
+  },
+  {
+    "title": "359+",
+    "val": "359",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/bg.png' alt='Bulgaria' />"
+    }
+  },
+  {
+    "title": "226+",
+    "val": "226",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/bf.png' alt='Burkina Faso' />"
+    }
+  },
+  {
+    "title": "257+",
+    "val": "257",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/bi.png' alt='Burundi' />"
+    }
+  },
+  {
+    "title": "855+",
+    "val": "855",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/kh.png' alt='Cambodia' />"
+    }
+  },
+  {
+    "title": "237+",
+    "val": "237",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/cm.png' alt='Cameroon' />"
+    }
+  },
+  {
+    "title": "1+",
+    "val": "1",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ca.png' alt='Canada' />"
+    }
+  },
+  {
+    "title": "238+",
+    "val": "238",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/cv.png' alt='Cape Verde' />"
+    }
+  },
+  {
+    "title": "1345+",
+    "val": "1345",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ky.png' alt='Cayman Islands' />"
+    }
+  },
+  {
+    "title": "236+",
+    "val": "236",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/cf.png' alt='Central African Republic' />"
+    }
+  },
+  {
+    "title": "235+",
+    "val": "235",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/td.png' alt='Chad' />"
+    }
+  },
+  {
+    "title": "56+",
+    "val": "56",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/cl.png' alt='Chile' />"
+    }
+  },
+  {
+    "title": "86+",
+    "val": "86",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/cn.png' alt='China' />"
+    }
+  },
+  {
+    "title": "57+",
+    "val": "57",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/co.png' alt='Colombia' />"
+    }
+  },
+  {
+    "title": "269+",
+    "val": "269",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/km.png' alt='Comoros' />"
+    }
+  },
+  {
+    "title": "242+",
+    "val": "242",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/cg.png' alt='Congo' />"
+    }
+  },
+  {
+    "title": "243+",
+    "val": "243",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/cd.png' alt='Congo, Democratic Republic' />"
+    }
+  },
+  {
+    "title": "506+",
+    "val": "506",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/cr.png' alt='Costa Rica' />"
+    }
+  },
+  {
+    "title": "385+",
+    "val": "385",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/hr.png' alt='Croatia' />"
+    }
+  },
+  {
+    "title": "53+",
+    "val": "53",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/cu.png' alt='Cuba' />"
+    }
+  },
+  {
+    "title": "599+",
+    "val": "599",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/cw.png' alt='Curacao' />"
+    }
+  },
+  {
+    "title": "357+",
+    "val": "357",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/cy.png' alt='Cyprus' />"
+    }
+  },
+  {
+    "title": "420+",
+    "val": "420",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/cz.png' alt='Czech Republic' />"
+    }
+  },
+  {
+    "title": "45+",
+    "val": "45",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/dk.png' alt='Denmark' />"
+    }
+  },
+  {
+    "title": "253+",
+    "val": "253",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/dj.png' alt='Djibouti' />"
+    }
+  },
+  {
+    "title": "1767+",
+    "val": "1767",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/dm.png' alt='Dominica' />"
+    }
+  },
+  {
+    "title": "1809+",
+    "val": "1809",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/do.png' alt='Dominican Republic' />"
+    }
+  },
+  {
+    "title": "593+",
+    "val": "593",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ec.png' alt='Ecuador' />"
+    }
+  },
+  {
+    "title": "20+",
+    "val": "20",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/eg.png' alt='Egypt' />"
+    }
+  },
+  {
+    "title": "503+",
+    "val": "503",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/sv.png' alt='El Salvador' />"
+    }
+  },
+  {
+    "title": "240+",
+    "val": "240",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/gq.png' alt='Equatorial Guinea' />"
+    }
+  },
+  {
+    "title": "291+",
+    "val": "291",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/er.png' alt='Eritrea' />"
+    }
+  },
+  {
+    "title": "372+",
+    "val": "372",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ee.png' alt='Estonia' />"
+    }
+  },
+  {
+    "title": "268+",
+    "val": "268",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/sz.png' alt='Eswatini' />"
+    }
+  },
+  {
+    "title": "251+",
+    "val": "251",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/et.png' alt='Ethiopia' />"
+    }
+  },
+  {
+    "title": "679+",
+    "val": "679",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/fj.png' alt='Fiji' />"
+    }
+  },
+  {
+    "title": "358+",
+    "val": "358",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/fi.png' alt='Finland' />"
+    }
+  },
+  {
+    "title": "33+",
+    "val": "33",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/fr.png' alt='France' />"
+    }
+  },
+  {
+    "title": "241+",
+    "val": "241",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ga.png' alt='Gabon' />"
+    }
+  },
+  {
+    "title": "220+",
+    "val": "220",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/gm.png' alt='Gambia' />"
+    }
+  },
+  {
+    "title": "995+",
+    "val": "995",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ge.png' alt='Georgia' />"
+    }
+  },
+  {
+    "title": "49+",
+    "val": "49",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/de.png' alt='Germany' />"
+    }
+  },
+  {
+    "title": "233+",
+    "val": "233",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/gh.png' alt='Ghana' />"
+    }
+  },
+  {
+    "title": "30+",
+    "val": "30",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/gr.png' alt='Greece' />"
+    }
+  },
+  {
+    "title": "1473+",
+    "val": "1473",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/gd.png' alt='Grenada' />"
+    }
+  },
+  {
+    "title": "590+",
+    "val": "590",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/gp.png' alt='Guadeloupe' />"
+    }
+  },
+  {
+    "title": "1671+",
+    "val": "1671",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/gu.png' alt='Guam' />"
+    }
+  },
+  {
+    "title": "502+",
+    "val": "502",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/gt.png' alt='Guatemala' />"
+    }
+  },
+  {
+    "title": "224+",
+    "val": "224",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/gn.png' alt='Guinea' />"
+    }
+  },
+  {
+    "title": "245+",
+    "val": "245",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/gw.png' alt='Guinea-Bissau' />"
+    }
+  },
+  {
+    "title": "592+",
+    "val": "592",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/gy.png' alt='Guyana' />"
+    }
+  },
+  {
+    "title": "509+",
+    "val": "509",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ht.png' alt='Haiti' />"
+    }
+  },
+  {
+    "title": "504+",
+    "val": "504",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/hn.png' alt='Honduras' />"
+    }
+  },
+  {
+    "title": "852+",
+    "val": "852",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/hk.png' alt='Hong Kong' />"
+    }
+  },
+  {
+    "title": "36+",
+    "val": "36",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/hu.png' alt='Hungary' />"
+    }
+  },
+  {
+    "title": "354+",
+    "val": "354",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/is.png' alt='Iceland' />"
+    }
+  },
+  {
+    "title": "91+",
+    "val": "91",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/in.png' alt='India' />"
+    }
+  },
+  {
+    "title": "62+",
+    "val": "62",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/id.png' alt='Indonesia' />"
+    }
+  },
+  {
+    "title": "98+",
+    "val": "98",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ir.png' alt='Iran' />"
+    }
+  },
+  {
+    "title": "964+",
+    "val": "964",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/iq.png' alt='Iraq' />"
+    }
+  },
+  {
+    "title": "353+",
+    "val": "353",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ie.png' alt='Ireland' />"
+    }
+  },
+  {
+    "title": "39+",
+    "val": "39",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/it.png' alt='Italy' />"
+    }
+  },
+  {
+    "title": "1876+",
+    "val": "1876",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/jm.png' alt='Jamaica' />"
+    }
+  },
+  {
+    "title": "81+",
+    "val": "81",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/jp.png' alt='Japan' />"
+    }
+  },
+  {
+    "title": "962+",
+    "val": "962",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/jo.png' alt='Jordan' />"
+    }
+  },
+  {
+    "title": "7+",
+    "val": "7",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/kz.png' alt='Kazakhstan' />"
+    }
+  },
+  {
+    "title": "254+",
+    "val": "254",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ke.png' alt='Kenya' />"
+    }
+  },
+  {
+    "title": "686+",
+    "val": "686",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ki.png' alt='Kiribati' />"
+    }
+  },
+  {
+    "title": "850+",
+    "val": "850",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/kp.png' alt='Korea, North' />"
+    }
+  },
+  {
+    "title": "82+",
+    "val": "82",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/kr.png' alt='Korea, South' />"
+    }
+  },
+  {
+    "title": "965+",
+    "val": "965",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/kw.png' alt='Kuwait' />"
+    }
+  },
+  {
+    "title": "996+",
+    "val": "996",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/kg.png' alt='Kyrgyzstan' />"
+    }
+  },
+  {
+    "title": "856+",
+    "val": "856",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/la.png' alt='Laos' />"
+    }
+  },
+  {
+    "title": "371+",
+    "val": "371",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/lv.png' alt='Latvia' />"
+    }
+  },
+  {
+    "title": "961+",
+    "val": "961",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/lb.png' alt='Lebanon' />"
+    }
+  },
+  {
+    "title": "266+",
+    "val": "266",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ls.png' alt='Lesotho' />"
+    }
+  },
+  {
+    "title": "231+",
+    "val": "231",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/lr.png' alt='Liberia' />"
+    }
+  },
+  {
+    "title": "218+",
+    "val": "218",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ly.png' alt='Libya' />"
+    }
+  },
+  {
+    "title": "423+",
+    "val": "423",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/li.png' alt='Liechtenstein' />"
+    }
+  },
+  {
+    "title": "370+",
+    "val": "370",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/lt.png' alt='Lithuania' />"
+    }
+  },
+  {
+    "title": "352+",
+    "val": "352",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/lu.png' alt='Luxembourg' />"
+    }
+  },
+  {
+    "title": "261+",
+    "val": "261",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/mg.png' alt='Madagascar' />"
+    }
+  },
+  {
+    "title": "265+",
+    "val": "265",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/mw.png' alt='Malawi' />"
+    }
+  },
+  {
+    "title": "60+",
+    "val": "60",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/my.png' alt='Malaysia' />"
+    }
+  },
+  {
+    "title": "960+",
+    "val": "960",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/mv.png' alt='Maldives' />"
+    }
+  },
+  {
+    "title": "223+",
+    "val": "223",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ml.png' alt='Mali' />"
+    }
+  },
+  {
+    "title": "356+",
+    "val": "356",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/mt.png' alt='Malta' />"
+    }
+  },
+  {
+    "title": "692+",
+    "val": "692",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/mh.png' alt='Marshall Islands' />"
+    }
+  },
+  {
+    "title": "222+",
+    "val": "222",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/mr.png' alt='Mauritania' />"
+    }
+  },
+  {
+    "title": "230+",
+    "val": "230",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/mu.png' alt='Mauritius' />"
+    }
+  },
+  {
+    "title": "52+",
+    "val": "52",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/mx.png' alt='Mexico' />"
+    }
+  },
+  {
+    "title": "691+",
+    "val": "691",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/fm.png' alt='Micronesia' />"
+    }
+  },
+  {
+    "title": "373+",
+    "val": "373",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/md.png' alt='Moldova' />"
+    }
+  },
+  {
+    "title": "377+",
+    "val": "377",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/mc.png' alt='Monaco' />"
+    }
+  },
+  {
+    "title": "976+",
+    "val": "976",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/mn.png' alt='Mongolia' />"
+    }
+  },
+  {
+    "title": "382+",
+    "val": "382",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/me.png' alt='Montenegro' />"
+    }
+  },
+  {
+    "title": "212+",
+    "val": "212",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ma.png' alt='Morocco' />"
+    }
+  },
+  {
+    "title": "258+",
+    "val": "258",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/mz.png' alt='Mozambique' />"
+    }
+  },
+  {
+    "title": "95+",
+    "val": "95",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/mm.png' alt='Myanmar' />"
+    }
+  },
+  {
+    "title": "264+",
+    "val": "264",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/na.png' alt='Namibia' />"
+    }
+  },
+  {
+    "title": "674+",
+    "val": "674",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/nr.png' alt='Nauru' />"
+    }
+  },
+  {
+    "title": "977+",
+    "val": "977",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/np.png' alt='Nepal' />"
+    }
+  },
+  {
+    "title": "31+",
+    "val": "31",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/nl.png' alt='Netherlands' />"
+    }
+  },
+  {
+    "title": "687+",
+    "val": "687",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/nc.png' alt='New Caledonia' />"
+    }
+  },
+  {
+    "title": "64+",
+    "val": "64",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/nz.png' alt='New Zealand' />"
+    }
+  },
+  {
+    "title": "505+",
+    "val": "505",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ni.png' alt='Nicaragua' />"
+    }
+  },
+  {
+    "title": "227+",
+    "val": "227",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ne.png' alt='Niger' />"
+    }
+  },
+  {
+    "title": "234+",
+    "val": "234",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ng.png' alt='Nigeria' />"
+    }
+  },
+  {
+    "title": "683+",
+    "val": "683",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/nu.png' alt='Niue' />"
+    }
+  },
+  {
+    "title": "672+",
+    "val": "672",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/nf.png' alt='Norfolk Island' />"
+    }
+  },
+  {
+    "title": "389+",
+    "val": "389",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/mk.png' alt='North Macedonia' />"
+    }
+  },
+  {
+    "title": "1670+",
+    "val": "1670",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/mp.png' alt='Northern Mariana Islands' />"
+    }
+  },
+  {
+    "title": "47+",
+    "val": "47",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/no.png' alt='Norway' />"
+    }
+  },
+  {
+    "title": "968+",
+    "val": "968",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/om.png' alt='Oman' />"
+    }
+  },
+  {
+    "title": "92+",
+    "val": "92",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/pk.png' alt='Pakistan' />"
+    }
+  },
+  {
+    "title": "680+",
+    "val": "680",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/pw.png' alt='Palau' />"
+    }
+  },
+  {
+    "title": "507+",
+    "val": "507",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/pa.png' alt='Panama' />"
+    }
+  },
+  {
+    "title": "675+",
+    "val": "675",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/pg.png' alt='Papua New Guinea' />"
+    }
+  },
+  {
+    "title": "595+",
+    "val": "595",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/py.png' alt='Paraguay' />"
+    }
+  },
+  {
+    "title": "51+",
+    "val": "51",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/pe.png' alt='Peru' />"
+    }
+  },
+  {
+    "title": "63+",
+    "val": "63",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ph.png' alt='Philippines' />"
+    }
+  },
+  {
+    "title": "64+",
+    "val": "64",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/pn.png' alt='Pitcairn Islands' />"
+    }
+  },
+  {
+    "title": "48+",
+    "val": "48",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/pl.png' alt='Poland' />"
+    }
+  },
+  {
+    "title": "351+",
+    "val": "351",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/pt.png' alt='Portugal' />"
+    }
+  },
+  {
+    "title": "1+",
+    "val": "1",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/pr.png' alt='Puerto Rico' />"
+    }
+  },
+  {
+    "title": "974+",
+    "val": "974",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/qa.png' alt='Qatar' />"
+    }
+  },
+  {
+    "title": "40+",
+    "val": "40",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ro.png' alt='Romania' />"
+    }
+  },
+  {
+    "title": "7+",
+    "val": "7",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ru.png' alt='Russia' />"
+    }
+  },
+  {
+    "title": "250+",
+    "val": "250",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/rw.png' alt='Rwanda' />"
+    }
+  },
+  {
+    "title": "1869+",
+    "val": "1869",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/kn.png' alt='Saint Kitts and Nevis' />"
+    }
+  },
+  {
+    "title": "1758+",
+    "val": "1758",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/lc.png' alt='Saint Lucia' />"
+    }
+  },
+  {
+    "title": "1784+",
+    "val": "1784",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/vc.png' alt='Saint Vincent and the Grenadines' />"
+    }
+  },
+  {
+    "title": "685+",
+    "val": "685",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ws.png' alt='Samoa' />"
+    }
+  },
+  {
+    "title": "378+",
+    "val": "378",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/SM.png' alt='San Marino' />"
+    }
+  },
+  {
+    "title": "239+",
+    "val": "239",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/st.png' alt='Sao Tome and Principe' />"
+    }
+  },
+  {
+    "title": "966+",
+    "val": "966",
+    "selected": true,
+    "options": {
+      "icon": "<img src='./assets/images/flags/sa.png' alt='Saudi Arabia' />"
+    }
+  },
+  {
+    "title": "221+",
+    "val": "221",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/sn.png' alt='Senegal' />"
+    }
+  },
+  {
+    "title": "381+",
+    "val": "381",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/rs.png' alt='Serbia' />"
+    }
+  },
+  {
+    "title": "248+",
+    "val": "248",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/sc.png' alt='Seychelles' />"
+    }
+  },
+  {
+    "title": "232+",
+    "val": "232",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/sl.png' alt='Sierra Leone' />"
+    }
+  },
+  {
+    "title": "65+",
+    "val": "65",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/sg.png' alt='Singapore' />"
+    }
+  },
+  {
+    "title": "1+",
+    "val": "1",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/sx.png' alt='Sint Maarten' />"
+    }
+  },
+  {
+    "title": "421+",
+    "val": "421",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/sk.png' alt='Slovakia' />"
+    }
+  },
+  {
+    "title": "386+",
+    "val": "386",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/si.png' alt='Slovenia' />"
+    }
+  },
+  {
+    "title": "677+",
+    "val": "677",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/sb.png' alt='Solomon Islands' />"
+    }
+  },
+  {
+    "title": "252+",
+    "val": "252",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/so.png' alt='Somalia' />"
+    }
+  },
+  {
+    "title": "27+",
+    "val": "27",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/za.png' alt='South Africa' />"
+    }
+  },
+  {
+    "title": "500+",
+    "val": "500",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/gs.png' alt='South Georgia and the South Sandwich Islands' />"
+    }
+  },
+  {
+    "title": "211+",
+    "val": "211",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ss.png' alt='South Sudan' />"
+    }
+  },
+  {
+    "title": "34+",
+    "val": "34",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/es.png' alt='Spain' />"
+    }
+  },
+  {
+    "title": "94+",
+    "val": "94",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/lk.png' alt='Sri Lanka' />"
+    }
+  },
+  {
+    "title": "249+",
+    "val": "249",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/sd.png' alt='Sudan' />"
+    }
+  },
+  {
+    "title": "597+",
+    "val": "597",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/sr.png' alt='Suriname' />"
+    }
+  },
+  {
+    "title": "46+",
+    "val": "46",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/se.png' alt='Sweden' />"
+    }
+  },
+  {
+    "title": "41+",
+    "val": "41",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ch.png' alt='Switzerland' />"
+    }
+  },
+  {
+    "title": "963+",
+    "val": "963",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/sy.png' alt='Syria' />"
+    }
+  },
+  {
+    "title": "886+",
+    "val": "886",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/tw.png' alt='Taiwan' />"
+    }
+  },
+  {
+    "title": "992+",
+    "val": "992",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/tj.png' alt='Tajikistan' />"
+    }
+  },
+  {
+    "title": "255+",
+    "val": "255",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/tz.png' alt='Tanzania' />"
+    }
+  },
+  {
+    "title": "66+",
+    "val": "66",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/th.png' alt='Thailand' />"
+    }
+  },
+  {
+    "title": "670+",
+    "val": "670",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/tl.png' alt='Timor-Leste' />"
+    }
+  },
+  {
+    "title": "228+",
+    "val": "228",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/tg.png' alt='Togo' />"
+    }
+  },
+  {
+    "title": "690+",
+    "val": "690",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/tk.png' alt='Tokelau' />"
+    }
+  },
+  {
+    "title": "676+",
+    "val": "676",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/to.png' alt='Tonga' />"
+    }
+  },
+  {
+    "title": "1868+",
+    "val": "1868",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/tt.png' alt='Trinidad and Tobago' />"
+    }
+  },
+  {
+    "title": "216+",
+    "val": "216",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/tn.png' alt='Tunisia' />"
+    }
+  },
+  {
+    "title": "90+",
+    "val": "90",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/tr.png' alt='Turkey' />"
+    }
+  },
+  {
+    "title": "993+",
+    "val": "993",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/tm.png' alt='Turkmenistan' />"
+    }
+  },
+  {
+    "title": "688+",
+    "val": "688",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/tv.png' alt='Tuvalu' />"
+    }
+  },
+  {
+    "title": "256+",
+    "val": "256",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ug.png' alt='Uganda' />"
+    }
+  },
+  {
+    "title": "380+",
+    "val": "380",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ua.png' alt='Ukraine' />"
+    }
+  },
+  {
+    "title": "971+",
+    "val": "971",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ae.png' alt='United Arab Emirates' />"
+    }
+  },
+  {
+    "title": "44+",
+    "val": "44",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/gb.png' alt='United Kingdom' />"
+    }
+  },
+  {
+    "title": "1+",
+    "val": "1",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/us.png' alt='United States' />"
+    }
+  },
+  {
+    "title": "598+",
+    "val": "598",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/uy.png' alt='Uruguay' />"
+    }
+  },
+  {
+    "title": "998+",
+    "val": "998",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/uz.png' alt='Uzbekistan' />"
+    }
+  },
+  {
+    "title": "678+",
+    "val": "678",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/vu.png' alt='Vanuatu' />"
+    }
+  },
+  {
+    "title": "379+",
+    "val": "379",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/va.png' alt='Vatican City' />"
+    }
+  },
+  {
+    "title": "58+",
+    "val": "58",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ve.png' alt='Venezuela' />"
+    }
+  },
+  {
+    "title": "84+",
+    "val": "84",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/vn.png' alt='Vietnam' />"
+    }
+  },
+  {
+    "title": "212+",
+    "val": "212",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/eh.png' alt='Western Sahara' />"
+    }
+  },
+  {
+    "title": "967+",
+    "val": "967",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/ye.png' alt='Yemen' />"
+    }
+  },
+  {
+    "title": "260+",
+    "val": "260",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/zm.png' alt='Zambia' />"
+    }
+  },
+  {
+    "title": "263+",
+    "val": "263",
+    "selected": false,
+    "options": {
+      "icon": "<img src='./assets/images/flags/zw.png' alt='Zimbabwe' />"
+    }
+  }
+]

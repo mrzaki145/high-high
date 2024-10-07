@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High-High &mdash; Login</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+
+    <!-- js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/preline@2.3.0/dist/preline.min.js"
+    ></script>
+    <script defer src="./assets/scripts/main.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="masterlayout">
+        <aside
+          id="aside"
+          class="aside hs-overlay-backdrop-open:bg-black/15 lg:hs-overlay-backdrop-open:hidden"
+        >
+          <div class="aside__header">
+            <div class="aside__logo">
+              <img src="./assets/images/logo.svg" class="lg" alt="" />
+              <img src="./assets/images/logo-sm.svg" class="sm" alt="" />
+            </div>
+
+            <button
+              type="button"
+              aria-label="Toggle navigation"
+              aria-controls="aside"
+              data-hs-overlay="#aside"
+              data-hs-overlay-options='{ "hiddenClass": "open--full" }'
+            >
+              <svg class="size-6 text-black">
+                <use href="./assets/images/icons/sprite.svg#menu-line"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="aside__body">
+            <div>
+              <p class="aside__title">لوحة الاجراءات</p>
+
+              <div class="aside__list">
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#house"></use>
+                  </svg>
+
+                  <span class="aside__link-text">عناصر سريعة</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#ads"></use>
+                  </svg>
+
+                  <span class="aside__link-text">حملات اعلانية</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#money"></use>
+                  </svg>
+
+                  <span class="aside__link-text">الفواتير والمدفوعات</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use
+                      href="./assets/images/icons/sprite.svg#analytics"
+                    ></use>
+                  </svg>
+
+                  <span class="aside__link-text">احصائيات مفصلة</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#discount"></use>
+                  </svg>
+
+                  <span class="aside__link-text">المنتجات</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#add-line"></use>
+                  </svg>
+
+                  <span class="aside__link-text">انشاء المحتوى</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="aside__footer">
+            <div>
+              <p class="aside__title">الاعدادات</p>
+
+              <div class="aside__list">
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#user"></use>
+                  </svg>
+
+                  <span class="aside__link-text">التحدث مع العملاء</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#support"></use>
+                  </svg>
+
+                  <span class="aside__link-text">التواصل مع الدعم</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#terms"></use>
+                  </svg>
+
+                  <span class="aside__link-text">الشروط والاحكام</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="hs-dropdown relative mt-8 [--strategy:absolute]">
+              <button
+                type="button"
+                class="hs-overlay-toggle aside__link aside__btn"
+              >
+                <span class="aside__link-icon-wrapper">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#user"></use>
+                  </svg>
+                </span>
+
+                <span class="aside__link-text">Ahmed Ali</span>
+              </button>
+
+              <div class="hs-dropdown-menu settings-drowdown hidden">
+                <p class="aside__title mb-2 mt-1">حساب المعلن</p>
+
+                <div class="aside__list">
+                  <a href="#" class="aside__link">
+                    <svg class="aside__link-icon">
+                      <use
+                        href="./assets/images/icons/sprite.svg#settings"
+                      ></use>
+                    </svg>
+
+                    <span class="aside__link-text">الاعدادات العامة</span>
+                  </a>
+
+                  <a href="#" class="aside__link">
+                    <svg class="aside__link-icon">
+                      <use href="./assets/images/icons/sprite.svg#logout"></use>
+                    </svg>
+
+                    <span class="aside__link-text">انهاء الجلسة</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <main class="main">
+          <div class="topbar">
+            <button class="btn btn--gray btn--sm rounded-full" type="button">
+              <svg>
+                <use href="./assets/images/icons/sprite.svg#support"></use>
+              </svg>
+
+              <span class="max-lg:hidden">تواصل مع الدعم</span>
+            </button>
+
+            <button type="button" class="notifications-dropdown">
+              <svg>
+                <use
+                  href="./assets/images/icons/sprite.svg#notification-line"
+                ></use>
+              </svg>
+            </button>
+
+            <div class="hs-dropdown relative inline-flex">
+              <button
+                type="button"
+                class="hs-dropdown-toggle inline-flex items-center gap-1.5"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                aria-label="Dropdown"
+              >
+                <svg class="size-4">
+                  <use
+                    href="./assets/images/icons/sprite.svg#global-line"
+                  ></use>
+                </svg>
+                EN
+                <svg class="size-4">
+                  <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu duration mt-2 hidden min-w-24 rounded-lg bg-white opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="hs-dropdown-default"
+              >
+                <div class="space-y-0.5 p-1">
+                  <a
+                    class="block w-full rounded-md px-3 py-2 text-sm text-gray-800 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none"
+                    href="#"
+                  >
+                    AR
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="size-8 overflow-hidden rounded-full">
+              <img
+                src="./assets/images/user.png"
+                class="size-full origin-center object-cover"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="main__content">
+            <div class="main__header">
+              <h1 class="main__title">الحساب الشخصي - المعلن</h1>
+
+              <ol class="breadcrump">
+                <li class="breadcrump__item">
+                  <a class="breadcrump__link" href="#"> الرئيسية </a>
+                  <svg>
+                    <use
+                      href="./assets/images/icons/sprite.svg#arrow-left"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="breadcrump__item">
+                  <a class="breadcrump__link" href="#"> اعدادات الحساب </a>
+                  <svg>
+                    <use
+                      href="./assets/images/icons/sprite.svg#arrow-left"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="breadcrump__item">
+                  <a class="breadcrump__link" href="#" aria-current="page">
+                    الحساب الشخصي
+                  </a>
+                  <svg>
+                    <use
+                      href="./assets/images/icons/sprite.svg#arrow-left"
+                    ></use>
+                  </svg>
+                </li>
+              </ol>
+            </div>
+
+            <div class="main__body flex flex-col justify-between gap-14">
+              <div class="space-y-7">
+                <section>
+                  <header class="mb-4">
+                    <h2 class="mb-1 font-extrabold">صورة الحساب</h2>
+                    <p class="text-sm text-gray">
+                      هذه الصورة التي يتم عرضها على الحساب
+                    </p>
+                  </header>
+
+                  <div class="flex items-end gap-5">
+                    <img
+                      src="./assets/images/illustrations/avatar.svg"
+                      class="right-full w-16 object-cover object-center"
+                      alt=""
+                    />
+
+                    <label
+                      type="button"
+                      class="btn btn--gray btn--sm rounded-full border border-gray-200"
+                    >
+                      <input type="file" class="sr-only" />
+
+                      رفع صورة الحساب
+                    </label>
+                  </div>
+                </section>
+
+                <section>
+                  <header class="mb-4">
+                    <h2 class="font-extrabold">معلومات عامة</h2>
+                  </header>
+
+                  <div class="w-full max-w-2xl">
+                    <div class="grid gap-4 lg:grid-cols-2">
+                      <div class="form__field">
+                        <label class="form__label" for="first-name"
+                          >الاسم الاول</label
+                        >
+                        <input
+                          id="first-name"
+                          class="form__input"
+                          type="text"
+                        />
+                        <!-- <span class="form__error">Lorem ipsum dolor sit.</span> -->
+                      </div>
+
+                      <div class="form__field">
+                        <label class="form__label" for="last-name"
+                          >الاسم الاخير</label
+                        >
+                        <input id="last-name" class="form__input" type="text" />
+                      </div>
+
+                      <div class="form__field">
+                        <label class="form__label" for="date"
+                          >تاريخ الميلاد</label
+                        >
+                        <input id="date" class="form__input" type="date" />
+                      </div>
+
+                      <div class="form__field">
+                        <label class="form__label" for="email"
+                          >البريد الالكتروني</label
+                        >
+                        <div class="relative flex items-center gap-2">
+                          <input id="email" class="form__input" type="email" />
+
+                          <button
+                            type="button"
+                            data-hs-overlay="#email-modal"
+                            class="absolute end-0.5 shrink-0 bg-white px-3 py-2 text-xs text-black"
+                          >
+                            تغيير
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="form__field">
+                        <label class="form__label" for="company-name"
+                          >اسم الشركة</label
+                        >
+
+                        <div class="relative flex items-center gap-2">
+                          <input
+                            id="company-name"
+                            class="form__input"
+                            type="text"
+                          />
+
+                          <button
+                            type="button"
+                            data-hs-overlay="#company-name-modal"
+                            class="absolute end-0.5 shrink-0 bg-white px-3 py-2 text-xs text-black"
+                          >
+                            تغيير
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="form__field">
+                        <label class="form__label" for="tel"
+                          >رقم الهاتف <span>*</span></label
+                        >
+                        <div class="flex items-center gap-2">
+                          <div class="relative flex flex-1 items-center gap-2">
+                            <input
+                              id="tel"
+                              class="form__input flex-1"
+                              type="tel"
+                            />
+
+                            <button
+                              type="button"
+                              data-hs-overlay="#tel-modal"
+                              class="absolute end-0.5 shrink-0 bg-white px-3 py-2 text-xs text-black"
+                            >
+                              تغيير
+                            </button>
+                          </div>
+
+                          <select
+                            id="countrySelect"
+                            data-hs-select='{
+                                "placeholder": "Select country...",
+                                "toggleTag": "<button type=\"button\" aria-expanded=\"false\"><span class=\"h-3 w-4 shrink-0\" data-icon></span><span class=\"text-gray-800 \" data-title></span></button>",
+                                "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative flex items-center h-10 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm focus:outline-none focus:border-primary",
+                                "dropdownClasses": "mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300",
+                                "optionClasses": "py-2 px-4 w-full text-sm text-gray-800 cursor-pointer hover:bg-gray-50 rounded-md focus:outline-none focus:bg-gray-50",
+                                "optionTemplate": "<div><div class=\"flex items-center\"><div class=\"me-2 h-3 w-4 rounded-md\" data-icon></div><div class=\"text-gray-800 \" data-title></div></div></div>",
+                                "extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2\"><svg class=\"size-4\"><use href=\"./assets/images/icons/sprite.svg#arrow-down\"></use></svg></div>"
+                              }'
+                            class="hidden"
+                          ></select>
+                        </div>
+                      </div>
+
+                      <div class="form__field">
+                        <label class="form__label" for="location"
+                          >حدد مكان الاقامة</label
+                        >
+                        <input id="location" class="form__input" type="text" />
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+
+              <div
+                class="flex flex-col-reverse gap-3 lg:flex-row lg:justify-between"
+              >
+                <button
+                  type="button"
+                  class="btn btn--gray btn--lg rounded-full"
+                >
+                  حفظ وخروج
+                </button>
+                <button
+                  type="button"
+                  class="btn btn--primary btn--lg rounded-full"
+                >
+                  حفظ التغييرات
+                </button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <div
+      id="email-modal"
+      class="hs-overlay pointer-events-none fixed start-0 top-0 z-[80] hidden size-full overflow-y-auto overflow-x-hidden"
+    >
+      <div
+        class="m-3 mt-0 flex min-h-[calc(100%-3.5rem)] items-center opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-[358px]"
+      >
+        <div
+          class="pointer-events-auto relative w-full rounded-xl bg-white p-6 shadow-modal"
+        >
+          <p class="mb-6 text-lg font-bold">تعديل البريد الالكتروني</p>
+          <form>
+            <div class="form__field mb-8">
+              <label class="form__label" for="email">البريد الالكتروني</label>
+              <input id="email" class="form__input" type="email" />
+            </div>
+
+            <button
+              type="button"
+              class="btn btn--primary btn--md w-full"
+              data-hs-overlay="#check-email-modal"
+            >
+              حفظ التغييرات
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="check-email-modal"
+      class="hs-overlay pointer-events-none fixed start-0 top-0 z-[80] hidden size-full overflow-y-auto overflow-x-hidden"
+    >
+      <div
+        class="m-3 mt-0 flex min-h-[calc(100%-3.5rem)] items-center opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-[358px]"
+      >
+        <div
+          class="pointer-events-auto relative w-full rounded-xl bg-white p-6 shadow-modal"
+        >
+          <img
+            src="./assets/images/icons/check-email.svg"
+            class="mx-auto size-14"
+            alt=""
+          />
+
+          <p
+            class="mb-12 text-center text-sm font-bold md:text-base lg:text-lg"
+          >
+            تحقق من بريدك الالكتروني
+          </p>
+
+          <button
+            type="button"
+            class="btn btn--primary btn--md w-full"
+            data-hs-overlay="#otp-modal"
+          >
+            حفظ التغييرات
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="company-name-modal"
+      class="hs-overlay pointer-events-none fixed start-0 top-0 z-[80] hidden size-full overflow-y-auto overflow-x-hidden"
+    >
+      <div
+        class="m-3 mt-0 flex min-h-[calc(100%-3.5rem)] items-center opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-[358px]"
+      >
+        <div
+          class="pointer-events-auto relative w-full rounded-xl bg-white p-6 shadow-modal"
+        >
+          <p class="mb-6 text-lg font-bold">تعديل اسم الشركة</p>
+          <form>
+            <div class="form__group mb-8">
+              <div class="form__field">
+                <label class="form__label" for="company-name">اسم الشركة</label>
+                <input id="company-name" class="form__input" type="text" />
+              </div>
+
+              <div class="form__field">
+                <label class="form__label">رسالة</label>
+                <textarea class="form__input"></textarea>
+              </div>
+
+              <div class="form__field">
+                <label class="form__label">ملف</label>
+                <input class="form__input" type="file" />
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn--primary btn--md w-full"
+              data-hs-overlay="#otp-modal"
+            >
+              حفظ التغييرات
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="tel-modal"
+      class="hs-overlay pointer-events-none fixed start-0 top-0 z-[80] hidden size-full overflow-y-auto overflow-x-hidden"
+    >
+      <div
+        class="m-3 mt-0 flex min-h-[calc(100%-3.5rem)] items-center opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-[358px]"
+      >
+        <div
+          class="pointer-events-auto relative w-full rounded-xl bg-white p-6 shadow-modal"
+        >
+          <p class="mb-6 text-lg font-bold">تعديل رقم الهاتف</p>
+          <form>
+            <div class="form__field mb-8">
+              <label class="form__label" for="tel">رقم الهاتف</label>
+              <input id="tel" class="form__input" type="text" />
+            </div>
+
+            <button
+              type="button"
+              class="btn btn--primary btn--md w-full"
+              data-hs-overlay="#otp-modal"
+            >
+              حفظ التغييرات
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="otp-modal"
+      class="hs-overlay pointer-events-none fixed start-0 top-0 z-[80] hidden size-full overflow-y-auto overflow-x-hidden [--overlay-backdrop:static]"
+    >
+      <div
+        class="m-3 mt-0 flex min-h-[calc(100%-3.5rem)] items-center opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-[358px]"
+      >
+        <div
+          class="pointer-events-auto relative w-full rounded-xl bg-white p-6 shadow-modal"
+        >
+          <p class="mb-6 text-lg font-bold">التحقق من رمز التحقق</p>
+
+          <form>
+            <div id="otpInputs" class="otp otp--sm mb-8">
+              <input
+                type="text"
+                autofocus
+                class="otp__input"
+                maxlength="1"
+                required
+              />
+              <input
+                type="text"
+                class="otp__input"
+                maxlength="1"
+                required
+                disabled
+              />
+              <input
+                type="text"
+                class="otp__input"
+                maxlength="1"
+                required
+                disabled
+              />
+              <input
+                type="text"
+                class="otp__input"
+                maxlength="1"
+                required
+                disabled
+              />
+            </div>
+
+            <button
+              type="button"
+              class="btn btn--primary btn--md w-full"
+              data-hs-overlay="#otp-modal"
+            >
+              حفظ التغييرات
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- otp -->
+    <script>
+      const otpInputs = document.querySelectorAll("#otpInputs input");
+      const verifyOtp = document.querySelector("#verify-otp");
+      const resendOtp = document.querySelector("#resend-otp");
+
+      otpInputs.forEach((input, index1) => {
+        input.addEventListener("keyup", (e) => {
+          const currentInput = input,
+            nextInput = input.nextElementSibling,
+            prevInput = input.previousElementSibling;
+          if (currentInput.value.length > 1) {
+            currentInput.value = "";
+            return;
+          }
+          if (
+            nextInput &&
+            nextInput.hasAttribute("disabled") &&
+            currentInput.value !== ""
+          ) {
+            nextInput.removeAttribute("disabled");
+            nextInput.focus();
+          }
+
+          if (e.key === "Backspace") {
+            otpInputs.forEach((input, index2) => {
+              if (index1 <= index2 && prevInput) {
+                input.setAttribute("disabled", true);
+                input.value = "";
+                prevInput.focus();
+              }
+            });
+          }
+          if (!otpInputs[3].disabled && otpInputs[3].value !== "") {
+            verifyOtp.disabled = false;
+            return;
+          }
+          verifyOtp.disabled = true;
+        });
+      });
+
+      resendOtp.addEventListener("click", () => {
+        for (let i = 1; i < otpInputs.length; i++) {
+          otpInputs[i].disabled = true;
+        }
+        otpInputs[0].disabled = false;
+        otpInputs[0].focus();
+
+        // otpInputs.forEach((input) => {
+        //   // input.value = "";
+        //   input.disabled = true;
+        //   input.focus();
+        // });
+      });
+    </script>
+
+    <script>
+      window.addEventListener("load", () =>
+        requestAnimationFrame(() => {
+          (function () {
+            const select = window.HSSelect.getInstance("#countrySelect");
+
+            fetch("./assets/countryCodes.json")
+              .then((response) => response.json())
+              .then((data) => {
+                select.addOption(data);
+              });
+          })();
+        }),
+      );
+    </script>
+  </body>
+</html>

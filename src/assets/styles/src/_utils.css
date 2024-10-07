@@ -1,0 +1,21 @@
+@import "tailwindcss/utilities";
+
+.ticket {
+  @apply relative;
+}
+.ticket::after {
+  content: "";
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  background: radial-gradient(
+      ellipse at center,
+      transparent 0%,
+      transparent 50%,
+      #fff 50%,
+      #fff 100%
+    ) -1px 5px / 30px 30px repeat-x;
+}

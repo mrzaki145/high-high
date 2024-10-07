@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High-High &mdash; Login</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+
+    <!-- js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/preline@2.5.0/dist/preline.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="flex min-h-dvh">
+        <div class="relative flex-1 max-lg:hidden">
+          <img
+            src="./assets/images/logo-vertical.svg"
+            class="absolute left-1/2 top-20 -translate-x-1/2"
+            alt=""
+          />
+          <video
+            src="./assets/videos/auth.mp4"
+            autoplay
+            loop
+            class="size-full object-cover object-bottom"
+          ></video>
+        </div>
+
+        <div class="flex flex-1 flex-col items-center gap-20">
+          <div
+            class="flex w-full items-center justify-between border-gray-100 px-6 py-4 max-lg:border-b"
+          >
+            <img src="./assets/images/logo.svg" class="lg:opacity-0" alt="" />
+
+            <div class="hs-dropdown relative inline-flex">
+              <button
+                type="button"
+                class="hs-dropdown-toggle inline-flex items-center gap-1.5"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                aria-label="Dropdown"
+              >
+                <svg class="size-4">
+                  <use
+                    href="./assets/images/icons/sprite.svg#global-line"
+                  ></use>
+                </svg>
+                EN
+                <svg class="size-4">
+                  <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu duration mt-2 hidden min-w-24 rounded-lg bg-white opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="hs-dropdown-default"
+              >
+                <div class="space-y-0.5 p-1">
+                  <a
+                    class="block w-full rounded-md px-3 py-2 text-sm text-gray-800 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none"
+                    href="#"
+                  >
+                    AR
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full max-w-[450px] px-6 lg:pt-20">
+            <header class="mb-6 w-full">
+              <h1 class="mb-2 font-bold md:text-lg lg:text-xl">
+                قم بأنشاء حسابك
+              </h1>
+              <p>قم بادخل معلوماتك الأساسية من اجل انشاء حسابك</p>
+            </header>
+
+            <form action="./check-email.html" class="form mb-6">
+              <div class="form__group--sm">
+                <div class="form__field">
+                  <label class="form__label" for="company-name"
+                    >اسم الشركة</label
+                  >
+                  <input
+                    id="company-name"
+                    class="form__input"
+                    type="text"
+                    placeholder="اسم الشركة"
+                  />
+                </div>
+
+                <div class="form__field">
+                  <label class="form__label" for="first-name"
+                    >الاسم الاول</label
+                  >
+                  <input
+                    id="first-name"
+                    class="form__input"
+                    type="text"
+                    placeholder="الاسم الاول"
+                  />
+                  <!-- <span class="form__error">Lorem ipsum dolor sit.</span> -->
+                </div>
+
+                <div class="form__field">
+                  <label class="form__label" for="last-name"
+                    >الاسم الاخير</label
+                  >
+                  <input
+                    id="last-name"
+                    class="form__input"
+                    type="text"
+                    placeholder="الاسم الاخير"
+                  />
+                </div>
+
+                <div class="form__field">
+                  <label class="form__label" for="email"
+                    >البريد الالكتروني</label
+                  >
+                  <input
+                    id="email"
+                    class="form__input"
+                    type="email"
+                    placeholder="البريد الالكتروني"
+                  />
+                </div>
+
+                <div class="flex items-end gap-2">
+                  <div class="form__field">
+                    <label class="form__label" for="tel">رقم الهاتف *</label>
+                    <input
+                      id="tel"
+                      type="tel"
+                      class="form__input"
+                      placeholder="xxxx xxxx xxxx xxxx"
+                    />
+                  </div>
+
+                  <div class="form__field max-w-32 flex-auto">
+                    <!-- Select -->
+                    <select
+                      id="countrySelect"
+                      data-hs-select='{
+                        "placeholder": "Select country...",
+                        "toggleTag": "<button type=\"button\" aria-expanded=\"false\"><span class=\"h-3 w-4 shrink-0\" data-icon></span><span class=\"text-gray-800 \" data-title></span></button>",
+                        "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative flex items-center h-10 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm focus:outline-none focus:border-primary",
+                        "dropdownClasses": "mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300",
+                        "optionClasses": "py-2 px-4 w-full text-sm text-gray-800 cursor-pointer hover:bg-gray-50 rounded-md focus:outline-none focus:bg-gray-50",
+                        "optionTemplate": "<div><div class=\"flex items-center\"><div class=\"me-2 h-3 w-4 rounded-md\" data-icon></div><div class=\"text-gray-800 \" data-title></div></div></div>",
+                        "extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2\"><svg class=\"size-4\"><use href=\"./assets/images/icons/sprite.svg#arrow-down\"></use></svg></div>"
+                      }'
+                      class="hidden"
+                    ></select>
+                    <!-- End Select -->
+                  </div>
+                </div>
+
+                <div class="form__field">
+                  <label class="form__label" for="password">كلمة المرور</label>
+                  <input
+                    id="password"
+                    class="form__input"
+                    type="password"
+                    placeholder="كلمة المرور"
+                  />
+                </div>
+              </div>
+
+              <button type="button" data-hs-overlay="#terms-modal">
+                <label class="form__checkbox" for="terms-checkbox">
+                  <input type="checkbox" id="terms-checkbox" />
+                  <span class="form__checkbox-icon"></span>
+                  <span>
+                    الموافقة على
+                    <span class="text-primary underline"
+                      >اتفاقية الاستخدام</span
+                    >
+                  </span></label
+                >
+              </button>
+
+              <button class="btn btn--primary btn--md w-full" type="submit">
+                تسجيل حساب
+              </button>
+            </form>
+
+            <p class="text-center text-xs text-gray">
+              لديك حساب بالفعل ؟
+              <a href="./login.html" class="text-primary">تسجيل الدخول</a>
+            </p>
+          </div>
+
+          <div class="mt-auto w-full border-t border-gray-100 py-2">
+            <p class="text-center text-sm text-gray">
+              جميع الحقوق محفوظة لRQM SoLUTION 2024
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="terms-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="hs-full-screen-label"
+      class="hs-overlay pointer-events-none fixed start-0 top-0 z-[80] hidden size-full overflow-y-auto overflow-x-hidden hs-overlay-backdrop-open:hidden"
+    >
+      <div
+        class="h-full max-h-full max-w-full opacity-0 transition-all hs-overlay-open:opacity-100"
+      >
+        <div
+          class="pointer-events-auto flex h-full max-h-full max-w-full flex-col bg-white py-6 lg:py-10"
+        >
+          <div class="mx-auto flex h-full w-full max-w-[1100px] flex-col">
+            <h2 class="text-xl font-bold lg:text-2xl">
+              اتفاقية وشروط الاستخدام
+            </h2>
+
+            <div class="relative my-8 flex-1 lg:my-10">
+              <div class="scrollbar absolute inset-0 overflow-auto pe-4">
+                <p>
+                  لوريم إيبسوم دولور الجلوس أميت، consectetur. لكن الأطفال لديهم
+                  انحناءة صغيرة وابتسامة على ظهورهم. عالم المرض مجرد euismod
+                  بحزن شديد. لأن الحياة ليست غرفة تعذيب. أنت بحاجة إلى ثعبان
+                  البحر وحلق برونزي. لم تكن هناك حاجة حتى غمرت البحيرة. Nibh
+                  eleifend arcu rutrum ما لم. من يكره الحياة لسببٍ ما، لكنها
+                  دائمًا بحيرة الشيخوخة. ولا حتى في هذا النقي. لكن متبج في
+                  أورناري scelerisque هندريريت تيمبوس. ليس هناك عقبة حديدية تملق
+                  حاجة التركة، لكن النقية هي الشيخوخة. أحتاج أن أشرب الكثير من
+                  الضحك. إنه شارع Ultricies الذي قيل. يريد Feugiat no tincidunt
+                  استثمار مؤلف الخميرة في موريس إيروس. في الماضي كان هناك في بعض
+                  الأحيان الكثير من الدعاية حول المرض. ما لم يكن قبل القوس، سيتم
+                  الاعتناء بالجوع الكبير، ومن أجله Morbi feugiat dolor metus
+                  pulvinar quam orci amet dignissim أحيانًا. الثمن النقي لنوع من
+                  القلق المحزن. ودع الكارتون هو مؤلف الجعبة، ودع العريف لا يحتاج
+                  إلى حياة. جوع ullamcorper pellentesque بحيث لا تسحب الجعبة
+                  الشاحنات. ليس دورة، بل وادي في الحقول ووسادة. أعضاء feugiat
+                  volutpat commodo هم كومودو السرير. ليس هناك فرصة حتى الآن، في
+                  الوقت الراهن. فليكن مرضا، فالرسوم المتحركة ماتت. عدوى طاردة
+                  للروائح أو عدوى طاردة للحشرات. ولكن الاهتمام بجوع المجتمع هو
+                  مصلحة الحياة. ليس هناك طريقة سهلة للخروج من كرة السلة. الألم
+                  هو عنصر من عناصر السرير، ولكنه قطر البروتين الدهني. سوف يتابع
+                  الله رعاية جعبة الطبيب في وادي الاتحاد الأوروبي المذكور. مدرسة
+                  الأطفال المنزلية ليست مركزًا طبيًا. ليس هناك كتلة الاغراء من
+                  البحيرة. لا أريد أي إيروس، أو كبيرة. لم يكن هناك أي كراهية.
+                  غدا لن أتمكن من لعب كرة السلة بعد الآن. ليس من عادة الإعلان
+                  ولكن عنصر اللاوريت حامل. ومع ذلك، يجب ملء العبوة بأكملها
+                  بالشوكولاتة النقية. الآن أصبح عنصر كرة القدم الخالص رسمًا
+                  كاريكاتوريًا جيدًا. فيفيرا هو ثمن كتلة الفم والفم. كانت كتلة
+                  اللاسينيا تعيش مثل المرض، لكنها كانت غدًا. أو الأليفند ولا
+                  طبقة الحمل . هذا هو مسار الماكياج نفسه. لكن المسار السريري
+                  لمسار الحياة. وقيل إن هندريت والرسم الكارتوني كانا نتيجة لكل
+                  منهما. Vulputate vulputate Massa diam enim sagittis لكن حزين.
+                  الهدف هو الطور أوج إيجيت نيبه. إن إغراء الواجبات المنزلية غدًا
+                  سيكون أكثر قبحًا وأسهل من الكرة اللينة. يقولون أنه لا توجد كرة
+                  قدم في الحياة. كل غد ناعم دائمًا حتى يحتاج البرونز الموجود في
+                  الشبكة إلى السعر. الحياة هي أداء أو مرض. في الوقت الحالي يجب
+                  تحرير الفناء، ولكن الكتلة. لا ينبغي لأحد أن يخاف من الشخص
+                  البائس الذي يكره اللعبة. تحتاج بحيرة أميت إيروس ليغولا إلى
+                  إيروس بأهداف كبيرة. وكان من الحكمة استهداف القناصة وقت البحيرة
+                  عند البوابة. سيتم متابعة حاجتي من قبل شركة الطيران. أريد بيعها
+                  ولكنها ليست كاملة الآن. الآن أنا أطلق عليه السهام. Rutrum
+                  سليمة pulvinar vitae dignissim volutpat aliquet viverra
+                  tristique. أكره أنه يحب لعب كرة السلة وكرة القدم. قد يكون
+                  اللاعب من محبي الفناء الخلفي للاعب كرة القدم، ولكن في بعض
+                  الأحيان يكون الأمر ممتعًا. Pharetra الآن يقدم مشروبًا غازيًا
+                  جدًا. علقت يبعث على السخرية جرة الكراهية. كان ماتيس على بعد
+                  مسافة قصيرة من حقول الحياة المعشبة. ابتسامتي الحزينة ليست
+                  مريحة، ولا الحكمة الذكية لا تعلقها. مسار القوس netus natoque
+                  nibh لكن عند الأعضاء. وليس لديه جعبة لتلقيها. يجب أن يكون من
+                  المناسب رسم ابتسامة على وجه الكرامة. للمركبات التابعة لشركة
+                  mauris ullamcorper pellentesque nisl condimentum. لكن ليس من
+                  الضروري أن تزين الدهليز بنموذج الحياة البرونزي. لا يوجد أطفال
+                  حوامل. لكني الآن قرأت الصورة الكبيرة. لم تكن أميت أويزمود في
+                  حد ذاتها وسادة للدعاية للشعب. دورة الماكياج ممتعة مثل كرة
+                  القدم. أو سعر وجوع الكازينو وسلطة الاستثمار. أنت بحاجة إلى
+                  شارع ذكي أيضًا. Arcu الآن faucibus Malesuada luctus feugiat
+                  risus proin إنه الوقت المناسب لتعليق الميكروويف. كان يعيش في
+                  كرة القدم. فقط لا تقلق بشأن ألم الحياة. يريد أن يكون الفناء
+                  الخلفي مثل الشرفة. ليس من الأصول الكبيرة تزيين عقارات كرة
+                  السلة في بعض الأحيان. الشوكولاتة ليست عنصرا من عناصر المطورين
+                  ولكن على حد تعبيرها. أو لا يوجد تأمين على الحياة لهذا المرض.
+                  لتزيين الفوجيات المبجلة هي الأرض كلها. ما لم تتم متابعة
+                  الحياة، إلا إذا لم يكن سعر العقار كذلك. لكن سكان porttitor
+                  الحالي. ويلزمه الطهارة، ومن الفناء، من وقت لآخر. ولكن سيتم
+                  الاهتمام أيضًا بأن تكون الأرض كتلة من euismod. Consectetur
+                  pulvinar Tellus mauris turpis ac. ولكن من المهم بالنسبة لشبكة
+                  CNN أن تكون سياسة الحياة لشبكة CNN. لا داعي للخوف من أن العالم
+                  سوف يجوع أو يكره. وسيتبع ماتيس تناول مشروب في فم الحمال.
+                  Euismod يروج للأرض فيها ويزينها. ديام الأطفال وتربس الحياة
+                  متقلب أميت. كرة القدم ليست لعبة كبيرة، لكن اللاعبين كذلك.
+                  أعضاء مؤلف Ultricies في الوقت الحاضر. الفناء الخلفي دائمًا
+                  كتلة ولا يحتاج إلى حمل. نتائج رائعة بالنسبة للذوق، ولكن بعض
+                  الجودة الرديئة لجعبة أولتريس. إنني أكره مسار البيتين، ولكني لا
+                  أفعل ذلك. سعر قطر الارض
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-end gap-2">
+              <button
+                type="button"
+                data-hs-overlay="#terms-modal"
+                class="btn btn--sm px-12"
+              >
+                الغاء
+              </button>
+              <button type="button" class="btn btn--black btn--sm px-12">
+                أوافق
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+
+    <script>
+      window.addEventListener("load", () =>
+        requestAnimationFrame(() => {
+          (function () {
+            const select = window.HSSelect.getInstance("#countrySelect");
+
+            fetch("./assets/countryCodes.json")
+              .then((response) => response.json())
+              .then((data) => {
+                select.addOption(data);
+              });
+          })();
+        }),
+      );
+    </script>
+  </body>
+</html>

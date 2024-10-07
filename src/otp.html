@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High-High &mdash; Login</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+
+    <!-- js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/preline@2.5.0/dist/preline.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="flex min-h-dvh">
+        <div class="relative flex-1 max-lg:hidden">
+          <img
+            src="./assets/images/logo-vertical.svg"
+            class="absolute left-1/2 top-20 -translate-x-1/2"
+            alt=""
+          />
+          <video
+            src="./assets/videos/auth.mp4"
+            autoplay
+            loop
+            class="h-full w-full object-cover object-center"
+          ></video>
+        </div>
+
+        <div class="flex flex-1 flex-col items-center gap-20">
+          <div
+            class="flex w-full items-center justify-between border-gray-100 px-6 py-4 max-lg:border-b"
+          >
+            <img src="./assets/images/logo.svg" class="lg:opacity-0" alt="" />
+
+            <div class="hs-dropdown relative inline-flex">
+              <button
+                type="button"
+                class="hs-dropdown-toggle inline-flex items-center gap-1.5"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                aria-label="Dropdown"
+              >
+                <svg class="size-4">
+                  <use
+                    href="./assets/images/icons/sprite.svg#global-line"
+                  ></use>
+                </svg>
+                EN
+                <svg class="size-4">
+                  <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu duration mt-2 hidden min-w-24 rounded-lg bg-white opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="hs-dropdown-default"
+              >
+                <div class="space-y-0.5 p-1">
+                  <a
+                    class="block w-full rounded-md px-3 py-2 text-sm text-gray-800 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none"
+                    href="#"
+                  >
+                    AR
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full max-w-[450px] px-6 lg:pt-40">
+            <header class="mb-6 w-full">
+              <h1 class="mb-2 font-bold md:text-lg lg:text-xl">
+                أدخل رقم التأكيد
+              </h1>
+              <p>تم ارسال رقم التاكيد الى رقم هاتفك</p>
+            </header>
+
+            <div>
+              <p class="mb-3 text-start text-sm text-gray-600">
+                رمز مكون من 4 ارقام
+              </p>
+
+              <form action="./account-created.html" class="mb-8">
+                <div id="otpInputs" class="otp mb-8">
+                  <input
+                    type="text"
+                    autofocus
+                    class="otp__input"
+                    placeholder="○"
+                    maxlength="1"
+                    required
+                  />
+                  <input
+                    type="text"
+                    class="otp__input"
+                    placeholder="○"
+                    maxlength="1"
+                    required
+                    disabled
+                  />
+                  <input
+                    type="text"
+                    class="otp__input"
+                    placeholder="○"
+                    maxlength="1"
+                    required
+                    disabled
+                  />
+                  <input
+                    type="text"
+                    class="otp__input"
+                    placeholder="○"
+                    maxlength="1"
+                    required
+                    disabled
+                  />
+                </div>
+
+                <div class="form__group">
+                  <button
+                    type="submit"
+                    id="verify-otp"
+                    class="btn btn--primary btn--md w-full"
+                  >
+                    تحقق من الرمز
+                  </button>
+
+                  <div class="mb-8 flex items-center justify-center gap-6">
+                    <p class="text-xs">
+                      إعادة ارسال الرمز بعد<span id="timer"> 00:30</span>
+                    </p>
+                    <button
+                      type="reset"
+                      id="resend-otp"
+                      class="text-sm font-bold text-primary"
+                    >
+                      إعادة الارسال
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="mt-auto w-full border-t border-gray-100 py-2">
+            <p class="text-center text-sm text-gray">
+              جميع الحقوق محفوظة لRQM SoLUTION 2024
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const otpInputs = document.querySelectorAll("#otpInputs input");
+      const verifyOtp = document.querySelector("#verify-otp");
+      const resendOtp = document.querySelector("#resend-otp");
+
+      otpInputs.forEach((input, index1) => {
+        input.addEventListener("keyup", (e) => {
+          const currentInput = input,
+            nextInput = input.nextElementSibling,
+            prevInput = input.previousElementSibling;
+          if (currentInput.value.length > 1) {
+            currentInput.value = "";
+            return;
+          }
+          if (
+            nextInput &&
+            nextInput.hasAttribute("disabled") &&
+            currentInput.value !== ""
+          ) {
+            nextInput.removeAttribute("disabled");
+            nextInput.focus();
+          }
+
+          if (e.key === "Backspace") {
+            otpInputs.forEach((input, index2) => {
+              if (index1 <= index2 && prevInput) {
+                input.setAttribute("disabled", true);
+                input.value = "";
+                prevInput.focus();
+              }
+            });
+          }
+          if (!otpInputs[3].disabled && otpInputs[3].value !== "") {
+            verifyOtp.disabled = false;
+            return;
+          }
+          verifyOtp.disabled = true;
+        });
+      });
+
+      resendOtp.addEventListener("click", () => {
+        for (let i = 1; i < otpInputs.length; i++) {
+          otpInputs[i].disabled = true;
+        }
+        otpInputs[0].disabled = false;
+        otpInputs[0].focus();
+
+        // otpInputs.forEach((input) => {
+        //   // input.value = "";
+        //   input.disabled = true;
+        //   input.focus();
+        // });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+.main {
+  @apply flex h-full flex-1 flex-col max-lg:ms-16 lg:ms-52;
+  width: calc(100% - theme(width.16));
+}
+@screen lg {
+  .main {
+    width: calc(100% - theme(width.52));
+  }
+}
+
+.menu-open .main {
+  @apply ms-16;
+  width: calc(100% - theme(width.16));
+}
+
+.main__content {
+  @apply flex w-full flex-1 flex-col py-6 max-lg:px-2 lg:px-6;
+}
+
+.main__header {
+  @apply mb-8;
+}
+
+.main__title {
+  @apply mb-1.5 text-lg font-bold lg:text-xl;
+}
+
+.main__body {
+  @apply w-full flex-1;
+}

@@ -1,0 +1,109 @@
+.aside {
+  @apply fixed inset-y-0 start-0 z-[60] flex flex-col overflow-auto bg-white px-2 pb-6 pt-3 lg:w-full;
+  box-shadow: -4px 0px 10px rgba(92, 92, 97, 0.04);
+}
+
+.aside {
+  @apply max-lg:max-w-16;
+  @apply lg:max-w-52;
+}
+.aside.open {
+  @apply max-lg:max-w-52;
+  @apply lg:max-w-16;
+}
+
+.aside__header {
+  @apply mb-6 flex items-center justify-between gap-3 px-2 pt-2 max-lg:flex-col-reverse lg:flex-row;
+}
+.aside.open .aside__header {
+  @apply max-lg:flex-row lg:flex-col-reverse;
+}
+
+.aside__logo {
+  @apply h-9;
+}
+.aside__logo img {
+  @apply h-full;
+}
+.aside.open .aside__logo img.sm,
+.aside__logo img.lg {
+  @apply max-lg:hidden lg:block;
+}
+.aside.open .aside__logo img.lg,
+.aside__logo img.sm {
+  @apply max-lg:block lg:hidden;
+}
+
+.aside__body {
+  @apply flex flex-1 flex-col justify-between max-lg:space-y-0 lg:space-y-6;
+}
+.aside.open .aside__body {
+  @apply max-lg:space-y-6 lg:space-y-0;
+}
+
+.aside__list {
+  @apply space-x-1.5;
+}
+
+.aside__footer {
+  @apply mt-auto border-t border-gray-100 pt-6 max-lg:px-1 lg:px-2;
+}
+.aside.open .aside__footer {
+  @apply max-lg:p-2 lg:px-1;
+}
+
+.aside__title {
+  @apply mb-2 ms-2 text-sm font-bold;
+  @apply max-lg:hidden lg:block;
+}
+.aside.open .aside__title {
+  @apply max-lg:block lg:hidden;
+}
+
+.aside__link {
+  @apply flex w-full items-center gap-2 rounded p-2 text-start text-xs transition-colors hover:bg-primary-50 aria-current:bg-primary-50;
+  @apply max-lg:justify-center lg:justify-start;
+}
+.aside.open .aside__link {
+  @apply max-lg:justify-start lg:justify-center;
+}
+
+.aside__link-icon {
+  @apply size-4 shrink-0 text-black;
+}
+
+.aside__link-text {
+  @apply w-full truncate whitespace-nowrap;
+  @apply max-lg:hidden lg:block;
+  /* transition: opacity 0.2s ease-in-out; */
+  /* opacity 0.2s ease-in-out 0.1s; */
+}
+.aside.open .aside__link-text {
+  @apply max-lg:block lg:hidden;
+}
+/* .aside.open .aside__link-text {
+  @apply hidden;
+} */
+
+.aside__btn {
+  @apply rounded border border-gray-100 p-2;
+}
+
+.aside__btn .aside__link-icon-wrapper {
+  @apply inline-flex size-4 shrink-0 items-center justify-center rounded-full bg-gray-100;
+}
+
+.aside__btn .aside__link-icon {
+  @apply size-2.5;
+}
+
+.settings-drowdown {
+  @apply top-0 w-full rounded bg-white p-1.5  [--placement:top-right];
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.09);
+}
+
+/* ---- */
+
+#aside-backdrop {
+  @apply opacity-0 !important;
+}
