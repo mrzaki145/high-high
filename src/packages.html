@@ -1,0 +1,1214 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High-High &mdash; Login</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+
+    <!-- js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/preline@2.3.0/dist/preline.min.js"
+    ></script>
+    <script defer src="./assets/scripts/main.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="masterlayout">
+        <aside
+          id="aside"
+          class="aside hs-overlay-backdrop-open:bg-black/15 lg:hs-overlay-backdrop-open:hidden"
+        >
+          <div class="aside__header">
+            <div class="aside__logo">
+              <img src="./assets/images/logo.svg" class="lg" alt="" />
+              <img src="./assets/images/logo-sm.svg" class="sm" alt="" />
+            </div>
+
+            <button
+              type="button"
+              aria-label="Toggle navigation"
+              aria-controls="aside"
+              data-hs-overlay="#aside"
+              data-hs-overlay-options='{ "hiddenClass": "open--full" }'
+            >
+              <svg class="size-6 text-black">
+                <use href="./assets/images/icons/sprite.svg#menu-line"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="aside__body">
+            <div>
+              <p class="aside__title">لوحة الاجراءات</p>
+
+              <div class="aside__list">
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#house"></use>
+                  </svg>
+
+                  <span class="aside__link-text">عناصر سريعة</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#ads"></use>
+                  </svg>
+
+                  <span class="aside__link-text">حملات اعلانية</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#money"></use>
+                  </svg>
+
+                  <span class="aside__link-text">الفواتير والمدفوعات</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use
+                      href="./assets/images/icons/sprite.svg#analytics"
+                    ></use>
+                  </svg>
+
+                  <span class="aside__link-text">احصائيات مفصلة</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#discount"></use>
+                  </svg>
+
+                  <span class="aside__link-text">المنتجات</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#add-line"></use>
+                  </svg>
+
+                  <span class="aside__link-text">انشاء المحتوى</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="aside__footer">
+            <div>
+              <p class="aside__title">الاعدادات</p>
+
+              <div class="aside__list">
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#user"></use>
+                  </svg>
+
+                  <span class="aside__link-text">التحدث مع العملاء</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#support"></use>
+                  </svg>
+
+                  <span class="aside__link-text">التواصل مع الدعم</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#terms"></use>
+                  </svg>
+
+                  <span class="aside__link-text">الشروط والاحكام</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="hs-dropdown relative mt-8 [--strategy:absolute]">
+              <button
+                type="button"
+                class="hs-overlay-toggle aside__link aside__btn"
+              >
+                <span class="aside__link-icon-wrapper">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#user"></use>
+                  </svg>
+                </span>
+
+                <span class="aside__link-text">Ahmed Ali</span>
+              </button>
+
+              <div class="hs-dropdown-menu settings-drowdown hidden">
+                <p class="aside__title mb-2 mt-1">حساب المعلن</p>
+
+                <div class="aside__list">
+                  <a href="#" class="aside__link">
+                    <svg class="aside__link-icon">
+                      <use
+                        href="./assets/images/icons/sprite.svg#settings"
+                      ></use>
+                    </svg>
+
+                    <span class="aside__link-text">الاعدادات العامة</span>
+                  </a>
+
+                  <a href="#" class="aside__link">
+                    <svg class="aside__link-icon">
+                      <use href="./assets/images/icons/sprite.svg#logout"></use>
+                    </svg>
+
+                    <span class="aside__link-text">انهاء الجلسة</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <main class="main">
+          <div class="topbar">
+            <button class="btn btn--gray btn--sm rounded-full" type="button">
+              <svg>
+                <use href="./assets/images/icons/sprite.svg#support"></use>
+              </svg>
+
+              <span class="max-lg:hidden">تواصل مع الدعم</span>
+            </button>
+
+            <button type="button" class="notifications-dropdown">
+              <svg>
+                <use
+                  href="./assets/images/icons/sprite.svg#notification-line"
+                ></use>
+              </svg>
+            </button>
+
+            <div class="hs-dropdown relative inline-flex">
+              <button
+                type="button"
+                class="hs-dropdown-toggle inline-flex items-center gap-1.5"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                aria-label="Dropdown"
+              >
+                <svg class="size-4">
+                  <use
+                    href="./assets/images/icons/sprite.svg#global-line"
+                  ></use>
+                </svg>
+                EN
+                <svg class="size-4">
+                  <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu duration mt-2 hidden min-w-36 overflow-hidden rounded-lg bg-white opacity-0 shadow-dropdown transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="hs-dropdown-default"
+              >
+                <div class="space-y-0.5 p-1">
+                  <a
+                    class="block w-full rounded-md px-3 py-2 text-sm text-gray-800 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none"
+                    href="#"
+                  >
+                    AR
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="size-8 overflow-hidden rounded-full">
+              <img
+                src="./assets/images/user.png"
+                class="size-full origin-center object-cover"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="main__content">
+            <div class="main__header">
+              <h1 class="main__title">الباقات</h1>
+
+              <ol class="breadcrump">
+                <li class="breadcrump__item">
+                  <a class="breadcrump__link" href="#"> الرئيسية </a>
+                  <svg>
+                    <use
+                      href="./assets/images/icons/sprite.svg#arrow-left"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="breadcrump__item">
+                  <a class="breadcrump__link" href="#">المدفوعات و الباقات </a>
+                  <svg>
+                    <use
+                      href="./assets/images/icons/sprite.svg#arrow-left"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="breadcrump__item">
+                  <a class="breadcrump__link" href="#" aria-current="page">
+                    الباقات
+                  </a>
+                  <svg>
+                    <use
+                      href="./assets/images/icons/sprite.svg#arrow-left"
+                    ></use>
+                  </svg>
+                </li>
+              </ol>
+            </div>
+
+            <div class="main__body flex flex-col justify-between gap-14">
+              <div class="space-y-7">
+                <section>
+                  <div class="flex flex-col gap-4 lg:flex-row">
+                    <div class="flex-1">
+                      <p class="mb-2 text-lg font-bold">تفاصيل الرصيد</p>
+                      <div
+                        class="flex flex-col gap-2 rounded-xl bg-white p-6 shadow-card lg:flex-row lg:items-center lg:justify-between"
+                      >
+                        <div class="flex items-center gap-2">
+                          <img
+                            src="./assets/images/illustrations/money-bag-gold.png"
+                            class="w-12 shrink-0"
+                            alt=""
+                          />
+
+                          <div>
+                            <p class="font-semibold">الرصيد الحالي</p>
+                            <p class="text-lg font-bold">SAR 1000.00</p>
+                          </div>
+                        </div>
+
+                        <button
+                          type="button"
+                          data-hs-overlay="#recharge-modal"
+                          class="btn btn--primary btn--sm"
+                        >
+                          شحن الرصيد
+                          <svg>
+                            <use
+                              href="./assets/images/icons/sprite.svg#arrow-left-line"
+                            ></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="flex-1">
+                      <p class="mb-2 text-lg font-bold">الباقة الحالية</p>
+                      <div
+                        class="flex flex-col gap-2 rounded-xl bg-white p-6 shadow-card lg:flex-row lg:items-center lg:justify-between"
+                      >
+                        <div>
+                          <p class="mb-0.5 text-lg font-semibold">
+                            الباقة الفضية - Silver EGP
+                          </p>
+                          <p class="text-sm text-gray">
+                            تاريخ الإنتهاء: 24-03-2024
+                          </p>
+                        </div>
+
+                        <p>
+                          <strong>8,453.00 نقطة</strong>
+                          / 2000 جنيه
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section>
+                  <div class="packages-list mb-8">
+                    <div class="package bronze">
+                      <img
+                        src="./assets/images/illustrations/bronze-bg.svg"
+                        alt=""
+                      />
+
+                      <div>
+                        <div class="package__header">
+                          <div>
+                            <h2>الباقة البرونزية</h2>
+                            <p class="package__discount">خصم 20% خطة سنوية</p>
+                          </div>
+                          <span class="package__badge">Bronze EGP</span>
+                        </div>
+
+                        <div class="package__body">
+                          <p>
+                            <strong>8,453.00 نقطة</strong>
+                            / 2000 جنيه
+                          </p>
+                          <p class="text-xs">
+                            ادفع مرة واحدة مدى الحياة, دون الحاجة الى دفعات
+                            اضافية
+                          </p>
+                        </div>
+
+                        <ul class="package__features collapse-content">
+                          <li>
+                            <svg class="ticket">
+                              <use
+                                href="./assets/images/icons/sprite.svg#ticket"
+                              ></use>
+                            </svg>
+                            نمودج عن ميزات الباقة
+                            <svg class="info">
+                              <use
+                                href="./assets/images/icons/sprite.svg#info"
+                              ></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="ticket">
+                              <use
+                                href="./assets/images/icons/sprite.svg#ticket"
+                              ></use>
+                            </svg>
+                            نمودج عن ميزات الباقة
+                            <svg class="info">
+                              <use
+                                href="./assets/images/icons/sprite.svg#info"
+                              ></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="ticket">
+                              <use
+                                href="./assets/images/icons/sprite.svg#ticket"
+                              ></use>
+                            </svg>
+                            نمودج عن ميزات الباقة
+                            <svg class="info">
+                              <use
+                                href="./assets/images/icons/sprite.svg#info"
+                              ></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="#" class="package__btn">
+                        شراء الباقة
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#arrow-left-line"
+                          ></use>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="package silver">
+                      <img
+                        src="./assets/images/illustrations/silver-bgh.svg"
+                        alt=""
+                      />
+
+                      <div>
+                        <div class="package__header">
+                          <div>
+                            <h2>الباقة الفضية</h2>
+                            <p class="package__discount">خصم 20% خطة سنوية</p>
+                          </div>
+                          <span class="package__badge">Silver EGP</span>
+                        </div>
+
+                        <div class="package__body">
+                          <p>
+                            <strong>8,453.00 نقطة</strong>
+                            / 2000 جنيه
+                          </p>
+                          <p class="text-xs">
+                            ادفع مرة واحدة مدى الحياة, دون الحاجة الى دفعات
+                            اضافية
+                          </p>
+                        </div>
+
+                        <ul class="package__features collapse-content">
+                          <li>
+                            <svg class="ticket">
+                              <use
+                                href="./assets/images/icons/sprite.svg#ticket"
+                              ></use>
+                            </svg>
+                            نمودج عن ميزات الباقة
+                            <svg class="info">
+                              <use
+                                href="./assets/images/icons/sprite.svg#info"
+                              ></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="ticket">
+                              <use
+                                href="./assets/images/icons/sprite.svg#ticket"
+                              ></use>
+                            </svg>
+                            نمودج عن ميزات الباقة
+                            <svg class="info">
+                              <use
+                                href="./assets/images/icons/sprite.svg#info"
+                              ></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="ticket">
+                              <use
+                                href="./assets/images/icons/sprite.svg#ticket"
+                              ></use>
+                            </svg>
+                            نمودج عن ميزات الباقة
+                            <svg class="info">
+                              <use
+                                href="./assets/images/icons/sprite.svg#info"
+                              ></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="#" class="package__btn">
+                        شراء الباقة
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#arrow-left-line"
+                          ></use>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="package gold">
+                      <img
+                        src="./assets/images/illustrations/gold-bg.svg"
+                        alt=""
+                      />
+
+                      <div>
+                        <div class="package__header">
+                          <div>
+                            <h2>الباقة الذهبية</h2>
+                            <p class="package__discount">خصم 20% خطة سنوية</p>
+                          </div>
+                          <span class="package__badge">Gold EGP</span>
+                        </div>
+
+                        <div class="package__body">
+                          <p>
+                            <strong>8,453.00 نقطة</strong>
+                            / 2000 جنيه
+                          </p>
+                          <p class="text-xs">
+                            ادفع مرة واحدة مدى الحياة, دون الحاجة الى دفعات
+                            اضافية
+                          </p>
+                        </div>
+
+                        <ul class="package__features collapse-content">
+                          <li>
+                            <svg class="ticket">
+                              <use
+                                href="./assets/images/icons/sprite.svg#ticket"
+                              ></use>
+                            </svg>
+                            نمودج عن ميزات الباقة
+                            <svg class="info">
+                              <use
+                                href="./assets/images/icons/sprite.svg#info"
+                              ></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="ticket">
+                              <use
+                                href="./assets/images/icons/sprite.svg#ticket"
+                              ></use>
+                            </svg>
+                            نمودج عن ميزات الباقة
+                            <svg class="info">
+                              <use
+                                href="./assets/images/icons/sprite.svg#info"
+                              ></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="ticket">
+                              <use
+                                href="./assets/images/icons/sprite.svg#ticket"
+                              ></use>
+                            </svg>
+                            نمودج عن ميزات الباقة
+                            <svg class="info">
+                              <use
+                                href="./assets/images/icons/sprite.svg#info"
+                              ></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="ticket">
+                              <use
+                                href="./assets/images/icons/sprite.svg#ticket"
+                              ></use>
+                            </svg>
+                            نمودج عن ميزات الباقة
+                            <svg class="info">
+                              <use
+                                href="./assets/images/icons/sprite.svg#info"
+                              ></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="ticket">
+                              <use
+                                href="./assets/images/icons/sprite.svg#ticket"
+                              ></use>
+                            </svg>
+                            نمودج عن ميزات الباقة
+                            <svg class="info">
+                              <use
+                                href="./assets/images/icons/sprite.svg#info"
+                              ></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="#" class="package__btn">
+                        شراء الباقة
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#arrow-left-line"
+                          ></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="mx-auto w-fit">
+                    <button id="toggleCollapseButton" class="group text-sm">
+                      <span class="group-[.closed]:hidden">تفاصيل أقل</span>
+                      <span class="group-[.opened]:hidden">تفاصيل اكثر</span>
+                      <svg class="mx-auto size-4">
+                        <use
+                          href="./assets/images/icons/sprite.svg#arrow-up"
+                        ></use>
+                      </svg>
+                    </button>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- modals -->
+
+    <div
+      id="payment-modal"
+      class="hs-overlay pointer-events-none fixed start-0 top-0 z-[80] hidden size-full overflow-y-auto overflow-x-hidden hs-overlay-backdrop-open:bg-black-100/50"
+    >
+      <div
+        class="m-3 mt-0 flex min-h-[calc(100%-3.5rem)] items-center opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-[358px]"
+      >
+        <div
+          class="ticket pointer-events-auto relative flex w-full flex-col rounded-xl rounded-b-none bg-white p-6 text-center shadow-modal"
+        >
+          <button
+            type="button"
+            data-hs-overlay="#payment-modal"
+            class="absolute end-4 top-4 inline-flex size-8 items-center justify-center rounded-full border border-gray-50 transition-colors hover:bg-gray-100"
+          >
+            <svg class="size-4">
+              <use href="./assets/images/icons/sprite.svg#close-line"></use>
+            </svg>
+          </button>
+
+          <img
+            src="./assets/images/illustrations/wallet.svg"
+            class="mx-auto mb-5 max-w-[235px]"
+            alt=""
+          />
+
+          <h4 class="mb-6 text-lg font-bold lg:text-xl">تم الدفع بنجاح</h4>
+
+          <div class="mb-6">
+            <p class="mb-1 text-sm text-gray-600">المبلغ الذي تم دفعه</p>
+            <p class="text-xl font-medium lg:text-2xl">EGP 1,000,000</p>
+          </div>
+
+          <div class="mb-6 grid gap-3 text-start lg:grid-cols-2">
+            <div class="rounded-lg border border-gray-100 p-3">
+              <p class="mb-1 text-xs text-gray-400">تاريخ التحويل</p>
+              <p class="text-sm font-medium">25 فيفري 2023, 13:22</p>
+            </div>
+            <div class="rounded-lg border border-gray-100 p-3">
+              <p class="mb-1 text-xs text-gray-400">رقم العملية</p>
+              <p class="text-sm font-medium">000085752257</p>
+            </div>
+            <div class="rounded-lg border border-gray-100 p-3">
+              <p class="mb-1 text-xs text-gray-400">اسم البنك</p>
+              <p class="text-sm font-medium">بنك مصر</p>
+            </div>
+            <div class="rounded-lg border border-gray-100 p-3">
+              <p class="mb-1 text-xs text-gray-400">Payment Method</p>
+              <p class="text-sm font-medium">XXXX-XXXX-XXXX-5635</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-4">
+            <a href="#" class="btn btn--primary btn--sm h-auto py-3 text-xs">
+              <svg>
+                <use href="./assets/images/icons/sprite.svg#ad-mic"></use>
+              </svg>
+              نشر اعلان جديد
+            </a>
+
+            <a
+              href="#"
+              class="btn btn--outline btn--sm h-auto bg-gray-50 py-3 text-xs"
+            >
+              <svg class="text-black">
+                <use href="./assets/images/icons/sprite.svg#house"></use>
+              </svg>
+              الصفحة الرئيسية
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="recharge-modal"
+      class="hs-overlay pointer-events-none fixed start-0 top-0 z-[80] hidden size-full overflow-y-auto overflow-x-hidden hs-overlay-backdrop-open:bg-black-100/50"
+    >
+      <div
+        class="m-3 mt-0 flex min-h-[calc(100%-3.5rem)] items-center opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full"
+      >
+        <div class="pointer-events-auto relative size-full bg-white pb-10">
+          <div class="mx-auto max-w-6xl px-4">
+            <div class="flex items-center gap-3 border-b border-gray-100 py-6">
+              <button data-hs-overlay="#payment-modal">
+                <svg class="size-6">
+                  <use
+                    href="./assets/images/icons/sprite.svg#arrow-left-line"
+                  ></use>
+                </svg>
+              </button>
+              <p class="text-lg font-bold lg:text-xl">شحن رصيد المحفظة</p>
+            </div>
+
+            <div class="py-10 lg:py-20">
+              <div class="flex flex-col gap-10 lg:flex-row">
+                <div class="flex-1">
+                  <div class="mb-6">
+                    <p class="mb-2 text-lg font-semibold">اضافة رصيد</p>
+                    <input
+                      type="text"
+                      class="form__input"
+                      placeholder="قيمة الرصيد"
+                    />
+                  </div>
+
+                  <div>
+                    <p class="mb-2 text-lg font-semibold">طرق الدفع</p>
+
+                    <nav
+                      class="flex gap-x-2"
+                      aria-label="Tabs"
+                      role="tablist"
+                      aria-orientation="horizontal"
+                    >
+                      <button
+                        type="button"
+                        class="active flex h-14 flex-1 items-center justify-center gap-2 rounded-xl border-2 border-gray-100 hs-tab-active:border-primary"
+                        id="card-tab"
+                        aria-selected="true"
+                        data-hs-tab="#card-content"
+                        aria-controls="card-content"
+                        role="tab"
+                      >
+                        <img
+                          src="./assets/images/illustrations/visa-mastercard.svg"
+                          class="h-5"
+                          alt=""
+                        />
+                      </button>
+                      <button
+                        type="button"
+                        class="flex h-14 flex-1 items-center justify-center gap-2 rounded-xl border-2 border-gray-100 hs-tab-active:border-primary"
+                        id="vodafone-cash-tab"
+                        aria-selected="false"
+                        data-hs-tab="#vodafone-cash-content"
+                        aria-controls="vodafone-cash-content"
+                        role="tab"
+                      >
+                        <img
+                          src="./assets/images/illustrations/vodafone-cash.png"
+                          class="h-7"
+                          alt=""
+                        />
+                      </button>
+                      <button
+                        type="button"
+                        class="flex h-14 flex-1 items-center justify-center gap-2 rounded-xl border-2 border-gray-100 hs-tab-active:border-primary"
+                        id="bank-tab"
+                        aria-selected="false"
+                        data-hs-tab="#bank-content"
+                        aria-controls="bank-content"
+                        role="tab"
+                      >
+                        <img
+                          src="./assets/images/icons/building-columns.svg"
+                          class="size-4"
+                          alt=""
+                        />
+                        حساب بنكي
+                      </button>
+                    </nav>
+
+                    <div class="mt-5">
+                      <div
+                        id="card-content"
+                        role="tabpanel"
+                        aria-labelledby="card-tab"
+                      >
+                        <div
+                          class="divide-y divide-gray-100 rounded-xl border border-gray-100"
+                        >
+                          <div class="flex items-center justify-between p-4">
+                            <p>
+                              <label for="">رقم البطاقة</label>
+                              <input
+                                type="text"
+                                class="mt-1 block appearance-none bg-transparent placeholder:text-gray-300 focus:outline-none"
+                                placeholder="0000 0000 0000 0000"
+                              />
+                            </p>
+
+                            <img
+                              src="./assets/images/illustrations/visa-mastercard.svg"
+                              class="h-5"
+                              alt=""
+                            />
+                          </div>
+
+                          <div
+                            class="flex flex-col divide-x divide-gray-100 lg:flex-row rtl:divide-x-reverse"
+                          >
+                            <div class="flex-1 p-4">
+                              <label for="">تاريخ الانتهاء</label>
+                              <input
+                                type="text"
+                                class="mt-1 block appearance-none bg-transparent placeholder:text-gray-300 focus:outline-none"
+                                placeholder="شهر/سنة"
+                              />
+                            </div>
+                            <div
+                              class="flex flex-1 items-center justify-between p-4"
+                            >
+                              <p>
+                                <label for="">CVC</label>
+                                <input
+                                  type="text"
+                                  class="mt-1 block appearance-none bg-transparent placeholder:text-gray-300 focus:outline-none"
+                                  placeholder="CVC"
+                                />
+                              </p>
+
+                              <img
+                                src="assets/images/icons/CVC.svg"
+                                class="w-8"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+
+                          <div class="p-4">
+                            <label for="">الدولة</label>
+                            <select
+                              class="mt-1 block w-full appearance-none bg-transparent placeholder:text-gray-300 focus:outline-none"
+                            >
+                              <option hidden>اختر الدولة</option>
+                              <option value="">مصر</option>
+                              <option value="">السعودية</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        id="vodafone-cash-content"
+                        class="hidden"
+                        role="tabpanel"
+                        aria-labelledby="vodafone-cash-tab"
+                      >
+                        <p class="mb-4 text-xl font-semibold">تفاصيل الدفع</p>
+
+                        <div
+                          class="mb-6 flex items-center justify-between rounded-xl border border-dashed border-primary bg-primary-50 p-6"
+                        >
+                          <div class="flex-1">
+                            <p class="text-primary-500">رقم استلام الدفع</p>
+                            <p class="text-lg text-primary-700">
+                              01001101201301
+                            </p>
+                          </div>
+
+                          <img
+                            src="./assets/images/illustrations/vodafone-cash.png"
+                            class="h-7"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="flex flex-col gap-4 lg:flex-row">
+                          <div class="flex items-end gap-2">
+                            <div class="form__field">
+                              <label class="form__label" for="tel"
+                                >رقم الهاتف المرسل</label
+                              >
+                              <input
+                                id="tel"
+                                type="tel"
+                                class="form__input"
+                                placeholder="xxxx xxxx xxxx xxxx"
+                              />
+                            </div>
+
+                            <div class="form__field max-w-32 flex-auto">
+                              <!-- Select -->
+                              <select
+                                id="countrySelect"
+                                data-hs-select='{
+                                  "placeholder": "Select country...",
+                                  "toggleTag": "<button type=\"button\" aria-expanded=\"false\"><span class=\"h-3 w-4 shrink-0\" data-icon></span><span class=\"text-gray-800 \" data-title></span></button>",
+                                  "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative flex items-center bg-gray-50 h-10 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer rounded-lg text-start text-sm focus:outline-none focus:border-primary",
+                                  "dropdownClasses": "mt-2 max-h-72 pb-1 px-1 space-y-0.5 z-20 w-full bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300",
+                                  "optionClasses": "py-2 px-4 w-full text-sm text-gray-800 cursor-pointer hover:bg-gray-50 rounded-md focus:outline-none focus:bg-gray-50",
+                                  "optionTemplate": "<div><div class=\"flex items-center\"><div class=\"me-2 h-3 w-4 rounded-md\" data-icon></div><div class=\"text-gray-800 \" data-title></div></div></div>",
+                                  "extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2\"><svg class=\"size-4\"><use href=\"./assets/images/icons/sprite.svg#arrow-down\"></use></svg></div>"
+                                }'
+                                class="hidden"
+                              ></select>
+                              <!-- End Select -->
+                            </div>
+                          </div>
+
+                          <div class="form__field">
+                            <label class="form__label" for="trans-number"
+                              >رقم العملية</label
+                            >
+                            <input
+                              id="trans-number"
+                              class="form__input"
+                              type="text"
+                              placeholder="xxxx xxxx xxxx xxxx"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        id="bank-content"
+                        class="hidden"
+                        role="tabpanel"
+                        aria-labelledby="bank-tab"
+                      >
+                        <p class="text-gray-500">
+                          This is the
+                          <em class="font-semibold text-gray-800">third</em>
+                          item's tab body.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-full max-w-[420px]">
+                  <p class="mb-6 text-lg font-semibold">تفاصيل العملية</p>
+
+                  <div class="rounded-xl bg-white p-6 shadow-modal">
+                    <div class="border-b border-gray-100 pb-9">
+                      <p class="mb-1 text-sm">قيمة الرصيد</p>
+                      <p class="text-2xl font-semibold lg:text-4xl">
+                        1,500.000 <span class="text-xl font-medium">جنية</span>
+                      </p>
+                    </div>
+
+                    <div
+                      class="flex items-start justify-between border-b border-gray-100 py-7"
+                    >
+                      <div>
+                        <p>الرسوم المستحقة</p>
+                        <p class="text-sm">يتم خصم (2.5% ) من قيمة المعاملة</p>
+                      </div>
+
+                      <p class="font-semibold">15,000 جنية</p>
+                    </div>
+
+                    <div class="flex items-start justify-between py-7">
+                      <p>الاجمالي</p>
+                      <p class="font-semibold">1,515.000 جنية</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col gap-2 border-t border-gray-100 pt-6 lg:flex-row lg:items-center lg:justify-between"
+            >
+              <button
+                type="button"
+                class="btn btn--primary btn--md"
+                data-hs-overlay="#payment-modal"
+              >
+                ادفع الان
+              </button>
+              <button
+                type="button"
+                class="btn btn--gray btn--md"
+                data-hs-overlay="#recharge-modal"
+              >
+                خروج
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- danger-modal -->
+    <div
+      id="danger-modal"
+      class="hs-overlay pointer-events-none fixed start-0 top-0 z-[80] hidden size-full overflow-y-auto overflow-x-hidden"
+    >
+      <div
+        class="m-3 mt-0 flex min-h-[calc(100%-3.5rem)] items-center opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-[358px]"
+      >
+        <div
+          class="pointer-events-auto relative flex flex-col rounded-xl bg-white p-6 text-center shadow-modal"
+        >
+          <button
+            type="button"
+            data-hs-overlay="#danger-modal"
+            class="absolute end-4 top-4 inline-flex size-8 items-center justify-center rounded-full border border-gray-100"
+          >
+            <svg class="size-4">
+              <use href="./assets/images/icons/sprite.svg#close-line"></use>
+            </svg>
+          </button>
+
+          <img
+            src="./assets/images/icons/money-danger.svg"
+            class="mx-auto mb-4 size-20"
+            alt=""
+          />
+
+          <div class="mb-6">
+            <p class="mb-3 font-semibold">ليس لديك رصيد كاف</p>
+            <p class="text-gray">
+              الرصيد غير كافٍ لإتمام هذه العملية. يرجى شحن محفظتك
+            </p>
+          </div>
+
+          <button
+            type="button"
+            data-hs-overlay="#danger-modal"
+            class="btn btn--primary btn--md"
+          >
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#wallet"></use>
+            </svg>
+            مراجعة المحفظة
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- warning-modal -->
+    <div
+      id="warning-modal"
+      class="hs-overlay pointer-events-none fixed start-0 top-0 z-[80] hidden size-full overflow-y-auto overflow-x-hidden"
+    >
+      <div
+        class="m-3 mt-0 flex min-h-[calc(100%-3.5rem)] items-center opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-[358px]"
+      >
+        <div
+          class="pointer-events-auto relative flex flex-col rounded-xl bg-white p-6 text-center shadow-modal"
+        >
+          <button
+            type="button"
+            data-hs-overlay="#warning-modal"
+            class="absolute end-4 top-4 inline-flex size-8 items-center justify-center rounded-full border border-gray-100"
+          >
+            <svg class="size-4">
+              <use href="./assets/images/icons/sprite.svg#close-line"></use>
+            </svg>
+          </button>
+
+          <img
+            src="./assets/images/icons/money-warning.svg"
+            class="mx-auto mb-4 size-20"
+            alt=""
+          />
+
+          <div class="mb-6">
+            <p class="mb-3 font-semibold">لايمكن القيام بعملية الدفع حاليا</p>
+            <p class="text-gray">
+              لا يمكن إتمام عملية الشراء في الوقت الحالي. يرجى المحاولة لاحقاً.
+            </p>
+          </div>
+
+          <button
+            type="button"
+            data-hs-overlay="#warning-modal"
+            class="btn btn--primary btn--md"
+          >
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#wallet"></use>
+            </svg>
+            مراجعة المحفظة
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- info-modal -->
+    <div
+      id="info-modal"
+      class="hs-overlay pointer-events-none fixed start-0 top-0 z-[80] hidden size-full overflow-y-auto overflow-x-hidden"
+    >
+      <div
+        class="m-3 mt-0 flex min-h-[calc(100%-3.5rem)] items-center opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-[358px]"
+      >
+        <div
+          class="pointer-events-auto relative flex flex-col rounded-xl bg-white p-6 text-center shadow-modal"
+        >
+          <button
+            type="button"
+            data-hs-overlay="#info-modal"
+            class="absolute end-4 top-4 inline-flex size-8 items-center justify-center rounded-full border border-gray-100"
+          >
+            <svg class="size-4">
+              <use href="./assets/images/icons/sprite.svg#close-line"></use>
+            </svg>
+          </button>
+
+          <img
+            src="./assets/images/icons/money-info.svg"
+            class="mx-auto mb-4 size-20"
+            alt=""
+          />
+
+          <div class="mb-6">
+            <p class="mb-3 font-semibold">لايمكن القيام بعملية الدفع حاليا</p>
+            <p class="text-gray">
+              لا يمكن إتمام عملية الشراء في الوقت الحالي. يرجى المحاولة لاحقاً.
+            </p>
+          </div>
+
+          <button
+            type="button"
+            data-hs-overlay="#info-modal"
+            class="btn btn--primary btn--md"
+          >
+            <svg>
+              <use href="./assets/images/icons/sprite.svg#wallet"></use>
+            </svg>
+            مراجعة المحفظة
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- confirm-modal -->
+    <div
+      id="confirm-modal"
+      class="hs-overlay pointer-events-none fixed start-0 top-0 z-[80] hidden size-full overflow-y-auto overflow-x-hidden"
+    >
+      <div
+        class="m-3 mt-0 flex min-h-[calc(100%-3.5rem)] items-center opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-[358px]"
+      >
+        <div
+          class="pointer-events-auto relative flex flex-col rounded-xl bg-white p-6 shadow-modal"
+        >
+          <button
+            type="button"
+            data-hs-overlay="#confirm-modal"
+            class="absolute end-4 top-4 inline-flex size-8 items-center justify-center rounded-full border border-gray-100"
+          >
+            <svg class="size-4">
+              <use href="./assets/images/icons/sprite.svg#close-line"></use>
+            </svg>
+          </button>
+
+          <div class="mb-6">
+            <p class="mb-3 font-semibold">هل انت متاكد انك تريد المواصلة</p>
+            <p class="text-sm text-gray">
+              سيتم خصم 600 نقطة من رصيدك من اجل تجديد باقتك
+              <strong>“ خطة المهندسين “</strong>
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-2 lg:flex-row">
+            <button
+              type="button"
+              data-hs-overlay="#confirm-modal"
+              class="btn btn--gray btn--md flex-1"
+            >
+              الغاء وعودة
+            </button>
+            <button
+              type="button"
+              data-hs-overlay="#confirm-modal"
+              class="btn btn--primary btn--md flex-1"
+            >
+              التاكيد والمواصلة
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("toggleCollapseButton")
+        .addEventListener("click", function () {
+          const button = this;
+          const collapsibleDivs =
+            document.querySelectorAll(".collapse-content");
+
+          let allClosed = true;
+
+          collapsibleDivs.forEach((div) => {
+            div.classList.toggle("hidden");
+
+            if (!div.classList.contains("hidden")) {
+              allClosed = false;
+            }
+          });
+
+          if (allClosed) {
+            button.classList.add("closed");
+            button.classList.remove("opened");
+          } else {
+            button.classList.add("opened");
+            button.classList.remove("closed");
+          }
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High-High &mdash; Login</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+
+    <!-- js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/preline@2.3.0/dist/preline.min.js"
+    ></script>
+    <script defer src="./assets/scripts/main.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="masterlayout">
+        <aside
+          id="aside"
+          class="aside hs-overlay-backdrop-open:bg-black/15 lg:hs-overlay-backdrop-open:hidden"
+        >
+          <div class="aside__header">
+            <div class="aside__logo">
+              <img src="./assets/images/logo.svg" class="lg" alt="" />
+              <img src="./assets/images/logo-sm.svg" class="sm" alt="" />
+            </div>
+
+            <button
+              type="button"
+              aria-label="Toggle navigation"
+              aria-controls="aside"
+              data-hs-overlay="#aside"
+              data-hs-overlay-options='{ "hiddenClass": "open--full" }'
+            >
+              <svg class="size-6 text-black">
+                <use href="./assets/images/icons/sprite.svg#menu-line"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="aside__body">
+            <div>
+              <p class="aside__title">لوحة الاجراءات</p>
+
+              <div class="aside__list">
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#house"></use>
+                  </svg>
+
+                  <span class="aside__link-text">عناصر سريعة</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#ads"></use>
+                  </svg>
+
+                  <span class="aside__link-text">حملات اعلانية</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#money"></use>
+                  </svg>
+
+                  <span class="aside__link-text">الفواتير والمدفوعات</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use
+                      href="./assets/images/icons/sprite.svg#analytics"
+                    ></use>
+                  </svg>
+
+                  <span class="aside__link-text">احصائيات مفصلة</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#discount"></use>
+                  </svg>
+
+                  <span class="aside__link-text">المنتجات</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#add-line"></use>
+                  </svg>
+
+                  <span class="aside__link-text">انشاء المحتوى</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="aside__footer">
+            <div>
+              <p class="aside__title">الاعدادات</p>
+
+              <div class="aside__list">
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#user"></use>
+                  </svg>
+
+                  <span class="aside__link-text">التحدث مع العملاء</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#support"></use>
+                  </svg>
+
+                  <span class="aside__link-text">التواصل مع الدعم</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#terms"></use>
+                  </svg>
+
+                  <span class="aside__link-text">الشروط والاحكام</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="hs-dropdown relative mt-8 [--strategy:absolute]">
+              <button
+                type="button"
+                class="hs-overlay-toggle aside__link aside__btn"
+              >
+                <span class="aside__link-icon-wrapper">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#user"></use>
+                  </svg>
+                </span>
+
+                <span class="aside__link-text">Ahmed Ali</span>
+              </button>
+
+              <div class="hs-dropdown-menu settings-drowdown hidden">
+                <p class="aside__title mb-2 mt-1">حساب المعلن</p>
+
+                <div class="aside__list">
+                  <a href="#" class="aside__link">
+                    <svg class="aside__link-icon">
+                      <use
+                        href="./assets/images/icons/sprite.svg#settings"
+                      ></use>
+                    </svg>
+
+                    <span class="aside__link-text">الاعدادات العامة</span>
+                  </a>
+
+                  <a href="#" class="aside__link">
+                    <svg class="aside__link-icon">
+                      <use href="./assets/images/icons/sprite.svg#logout"></use>
+                    </svg>
+
+                    <span class="aside__link-text">انهاء الجلسة</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <main class="main">
+          <div class="topbar">
+            <button class="btn btn--gray btn--sm rounded-full" type="button">
+              <svg>
+                <use href="./assets/images/icons/sprite.svg#support"></use>
+              </svg>
+
+              <span class="max-lg:hidden">تواصل مع الدعم</span>
+            </button>
+
+            <button type="button" class="notifications-dropdown">
+              <svg>
+                <use
+                  href="./assets/images/icons/sprite.svg#notification-line"
+                ></use>
+              </svg>
+            </button>
+
+            <div class="hs-dropdown relative inline-flex">
+              <button
+                type="button"
+                class="hs-dropdown-toggle inline-flex items-center gap-1.5"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                aria-label="Dropdown"
+              >
+                <svg class="size-4">
+                  <use
+                    href="./assets/images/icons/sprite.svg#global-line"
+                  ></use>
+                </svg>
+                EN
+                <svg class="size-4">
+                  <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu duration mt-2 hidden min-w-36 overflow-hidden rounded-lg bg-white opacity-0 shadow-dropdown transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="hs-dropdown-default"
+              >
+                <div class="space-y-0.5 p-1">
+                  <a
+                    class="block w-full rounded-md px-3 py-2 text-sm text-gray-800 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none"
+                    href="#"
+                  >
+                    AR
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="size-8 overflow-hidden rounded-full">
+              <img
+                src="./assets/images/user.png"
+                class="size-full origin-center object-cover"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="main__content">
+            <div class="main__header">
+              <h1 class="main__title">الإشتراكات والمدفوعات</h1>
+
+              <ol class="breadcrump">
+                <li class="breadcrump__item">
+                  <a class="breadcrump__link" href="#"> الرئيسية </a>
+                  <svg>
+                    <use
+                      href="./assets/images/icons/sprite.svg#arrow-left"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="breadcrump__item">
+                  <a class="breadcrump__link" href="#"> المدفوعات و الباقات </a>
+                  <svg>
+                    <use
+                      href="./assets/images/icons/sprite.svg#arrow-left"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="breadcrump__item">
+                  <a class="breadcrump__link" href="#" aria-current="page">
+                    الإشتراكات والمدفوعات
+                  </a>
+                  <svg>
+                    <use
+                      href="./assets/images/icons/sprite.svg#arrow-left"
+                    ></use>
+                  </svg>
+                </li>
+              </ol>
+            </div>
+
+            <div class="main__body">
+              <div class="rounded-xl bg-white px-5 py-4 shadow-card">
+                <div class="table-header">
+                  <h2 class="table-header__title">سجل المدفوعات</h2>
+
+                  <div class="flex items-center gap-3">
+                    <div class="relative flex items-center">
+                      <svg class="absolute start-3 size-4">
+                        <use
+                          href="./assets/images/icons/sprite.svg#search"
+                        ></use>
+                      </svg>
+                      <input
+                        type="text"
+                        class="form__input ps-8"
+                        placeholder="ابحث عن اعلان . . "
+                      />
+                    </div>
+
+                    <div class="hs-dropdown relative flex">
+                      <button
+                        type="button"
+                        class="hs-dropdown-toggle btn btn--sm btn--gray border-none"
+                      >
+                        <svg>
+                          <use
+                            href="./assets/images/icons/sprite.svg#sliders-horizontal-alt"
+                          ></use>
+                        </svg>
+                        التصفية
+                      </button>
+
+                      <div
+                        class="hs-dropdown-menu duration mt-2 hidden min-w-36 overflow-hidden rounded-lg bg-white opacity-0 shadow-dropdown transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+                      >
+                        <button
+                          class="block w-full bg-white px-2 py-1.5 text-start transition-colors hover:bg-gray-50"
+                        >
+                          option 1
+                        </button>
+                        <button
+                          class="block w-full bg-white px-2 py-1.5 text-start transition-colors hover:bg-gray-50"
+                        >
+                          option 2
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-full overflow-hidden">
+                  <div class="w-full overflow-x-auto">
+                    <table class="table">
+                      <thead>
+                        <tr class="bg-gray-50">
+                          <th>نوع المدفوعه</th>
+                          <th>نوع المعاملة</th>
+                          <th>تاريخ المدفوعات</th>
+                          <th>طريقة الدفع</th>
+                          <th>السعر</th>
+                          <th>حالة المدفوعات</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>شراء باقة 8501 نقطة</td>
+                          <td>الباقة الفضية</td>
+                          <td>2024.05.16</td>
+                          <td>
+                            <img
+                              src="./assets/images/illustrations/vodafone-cash.png"
+                              class="mx-auto h-7"
+                              alt=""
+                            />
+                          </td>
+                          <td>2000 جنية</td>
+                          <td>
+                            <span class="badge badge--success">
+                              <svg>
+                                <use
+                                  href="./assets/images/icons/sprite.svg#check_box_filled"
+                                ></use>
+                              </svg>
+                              تم الدفع
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>شراء باقة 8501 نقطة</td>
+                          <td>الباقة الفضية</td>
+                          <td>2024.05.16</td>
+                          <td>
+                            <div class="flex items-center justify-center gap-2">
+                              <img
+                                src="./assets/images/icons/building-columns.svg"
+                                class="size-4"
+                                alt=""
+                              />
+                              حساب بنكي
+                            </div>
+                          </td>
+                          <td>2000 جنية</td>
+                          <td>
+                            <span class="badge badge--danger">
+                              <svg>
+                                <use
+                                  href="./assets/images/icons/sprite.svg#close-line"
+                                ></use>
+                              </svg>
+                              تم رفضه
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>شراء باقة 8501 نقطة</td>
+                          <td>الباقة الفضية</td>
+                          <td>2024.05.16</td>
+                          <td>
+                            <div class="flex items-center justify-center gap-2">
+                              4242 ••••
+                              <img
+                                src="./assets/images/illustrations/visa.svg"
+                                class="h-8 rounded-md border border-gray-50"
+                                alt=""
+                              />
+                            </div>
+                          </td>
+                          <td>2000 جنية</td>
+                          <td>
+                            <span class="badge badge--danger">
+                              <svg>
+                                <use
+                                  href="./assets/images/icons/sprite.svg#close-line"
+                                ></use>
+                              </svg>
+                              تم رفضه
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="table-pagination">
+                  <p>أظهار صفحة 1 من 25</p>
+
+                  <div class="pagination">
+                    <span>صفحة</span>
+                    <select name="page">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                    من 10
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- logout-modal -->
+    <div
+      id="logout-modal"
+      class="hs-overlay pointer-events-none fixed start-0 top-0 z-[80] hidden size-full overflow-y-auto overflow-x-hidden"
+    >
+      <div
+        class="m-3 mt-0 opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-[358px]"
+      >
+        <div
+          class="pointer-events-auto relative flex flex-col rounded-xl bg-white p-6 text-center shadow-modal"
+        >
+          <button
+            type="button"
+            data-hs-overlay="#logout-modal"
+            class="absolute start-8 top-8 inline-flex size-8 items-center justify-center rounded border border-gray-100"
+          >
+            <svg class="size-4">
+              <use href="./assets/images/icons/sprite.svg#close-line"></use>
+            </svg>
+          </button>
+
+          <img
+            src="./assets/images/illustrations/logout.svg"
+            class="mx-auto mb-5"
+            alt=""
+          />
+
+          <div class="mb-6">
+            <h4 class="mb-3 text-lg font-bold lg:text-xl">
+              تأكيد تسجيل الخروج
+            </h4>
+            <p class="text-sm text-gray">
+              سيتم انهاء الحصة وتوجيهك الى الصفحة الرئيسية
+            </p>
+          </div>
+
+          <div class="mb-6 flex items-center gap-4">
+            <button
+              type="button"
+              class="btn btn--outline btn--sm flex-1 bg-gray-50 hover:bg-gray-100"
+              data-hs-overlay="#logout-modal"
+            >
+              الغاء
+            </button>
+            <button
+              type="button"
+              class="btn btn--primary btn--sm flex-1 border-transparent bg-primary-100 text-primary hover:bg-primary hover:text-white"
+            >
+              نعم انهاء الجلسة
+            </button>
+          </div>
+
+          <label
+            class="form__checkbox justify-center text-sm text-gray-600"
+            for="terms-checkbox"
+          >
+            <input type="checkbox" id="terms-checkbox" />
+            <span class="sm round-full"></span>
+            لا تظهر هذا مرة اخرى
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <!-- https://wwilsman.github.io/Datepicker.js/ -->
+    <script src="./assets/scripts/datepicker.js"></script>
+    <script>
+      var ranged = new Datepicker("#timePicker", {
+        ranged: true,
+      });
+    </script>
+  </body>
+</html>
