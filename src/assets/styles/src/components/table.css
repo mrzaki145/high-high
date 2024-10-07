@@ -19,7 +19,7 @@
 }
 
 .date-picker .input-wrapper {
-  @apply flex w-full items-center gap-2 rounded-lg  bg-gray-50 px-5 py-3 lg:min-w-[255px];
+  @apply flex w-full items-center gap-2 rounded-full  rounded-lg bg-white px-4 py-2 lg:min-w-[255px];
 }
 
 /* table */
@@ -57,7 +57,7 @@
 }
 
 .table td {
-  @apply px-6 pb-6 pt-4 text-center;
+  @apply max-w-sm whitespace-nowrap px-6 pb-6 pt-4 text-center;
 }
 
 /* pagination */
