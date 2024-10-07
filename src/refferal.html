@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High-High &mdash; Login</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+
+    <!-- js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/preline@2.3.0/dist/preline.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div
+        class="flex w-full items-center justify-between bg-white px-4 py-6 shadow-card"
+      >
+        <img src="./assets/images/logo.svg" class="h-10" alt="" />
+
+        <div class="hs-dropdown relative inline-flex">
+          <button
+            type="button"
+            class="hs-dropdown-toggle inline-flex items-center gap-1.5"
+            aria-haspopup="menu"
+            aria-expanded="false"
+            aria-label="Dropdown"
+          >
+            <svg class="size-4">
+              <use href="./assets/images/icons/sprite.svg#global-line"></use>
+            </svg>
+            EN
+            <svg class="size-4">
+              <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+            </svg>
+          </button>
+
+          <div
+            class="hs-dropdown-menu duration mt-2 hidden min-w-24 rounded-lg bg-white opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="hs-dropdown-default"
+          >
+            <div class="space-y-0.5 p-1">
+              <a
+                class="block w-full rounded-md px-3 py-2 text-sm text-gray-800 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none"
+                href="#"
+              >
+                AR
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mx-auto flex w-full flex-col-reverse items-start justify-center gap-8 bg-gray-50 px-4 py-14 lg:flex-row"
+      >
+        <div
+          class="w-full max-w-[400px] shrink-0 rounded-xl bg-white p-4 lg:p-8"
+        >
+          <div
+            class="mx-auto mb-12 flex w-fit items-center gap-4 rounded-full bg-white p-2 shadow-lg"
+          >
+            <p class="ps-4 text-lg/tight text-gray-400">
+              اربح مايصل <br />الى 5000 نقطة
+            </p>
+            <img
+              src="./assets/images/illustrations/promo.png"
+              class="h-full"
+              alt=""
+            />
+          </div>
+
+          <div class="mb-10 w-full text-center">
+            <p class="mb-6 text-lg font-semibold lg:text-xl">عدد المشاركات</p>
+            <div
+              class="mx-auto mb-6 flex size-16 items-center justify-center rounded-full border-2 border-gray-200"
+            >
+              <span class="text-3xl text-primary">0</span>
+            </div>
+            <p class="text-lg text-gray">كود الاحالة الخاص بك</p>
+            <p class="mb-6 text-lg text-gray">#4552fgg</p>
+            <div class="flex gap-2">
+              <div
+                dir="ltr"
+                class="flex-1 truncate rounded-lg border border-gray-200 px-2 py-2"
+              >
+                https://highihigh.net/ref-cfxdd64
+              </div>
+
+              <button
+                type="button"
+                class="rounded-lg bg-gray-300 px-3 text-white"
+              >
+                نسخ
+              </button>
+            </div>
+          </div>
+
+          <div class="mb-8">
+            <p class="mb-4 text-center text-sm text-gray">
+              او ارسل الرابط عبر :
+            </p>
+            <div
+              class="mx-auto flex w-fit items-center justify-center gap-6 rounded-2xl bg-gray-50 px-6 py-4 [&_svg]:size-6"
+            >
+              <a href="#">
+                <svg class="icon">
+                  <use href="./assets/images/icons/sprite.svg#tiktok"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="icon">
+                  <use href="./assets/images/icons/sprite.svg#snapchat"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="icon">
+                  <use href="./assets/images/icons/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="icon">
+                  <use href="./assets/images/icons/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="icon">
+                  <use href="./assets/images/icons/sprite.svg#twitter-x"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="icon">
+                  <use href="./assets/images/icons/sprite.svg#email"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="relative isolate overflow-hidden rounded-xl px-4 py-8">
+            <div class="flex items-start gap-4">
+              <div class="flex-1">
+                <div class="mb-2 flex items-center gap-2">
+                  <img
+                    src="./assets/images/illustrations/coin.png"
+                    class="size-6"
+                    alt=""
+                  />
+                  <p class="text-lg font-semibold text-primary-700">
+                    حقق ارباحا اكثر
+                  </p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div class="size-6">
+                    <svg class="size-6 text-primary">
+                      <use
+                        href="./assets/images/icons/sprite.svg#stop-outline"
+                      ></use>
+                    </svg>
+                  </div>
+
+                  <div class="flex-1">
+                    <p class="mb-1 font-semibold">عدد النقاط الاضافية</p>
+                    <p class="mb-1 text-xs font-semibold text-primary">
+                      3000 نقطة
+                    </p>
+                    <p class="text-xs">
+                      سيتم الغاء هذه النقاط في حالة عدم استغلالها في مدة 12 شهر
+                      من تاريخ ربحها
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <img src="./assets/images/illustrations/coins-jar.png" alt="" />
+            </div>
+
+            <img
+              src="./assets/images/illustrations/mark-more-points.png"
+              class="pointer-events-none absolute inset-0 -z-10 size-full object-cover object-center"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="w-full max-w-[670px]">
+          <div
+            class="rounded-2xl p-4 text-white lg:p-8"
+            style="
+              background: linear-gradient(180deg, #ffd1a8 0%, #eb5b27 100%);
+            "
+          >
+            <img
+              src="./assets/images/illustrations/illustration-referral.png"
+              class="mb-5 w-full rounded-2xl"
+              alt=""
+            />
+
+            <div class="mx-auto max-w-80">
+              <ul class="mb-7 space-y-6">
+                <li class="flex items-start gap-4">
+                  <img
+                    src="./assets/images/illustrations/share.svg"
+                    class="size-6 shrink-0"
+                    alt=""
+                  />
+                  <div class="flex-1 space-y-1 text-center">
+                    <p class="font-bold">شارك كود الاحالة واربح</p>
+                    <p class="text-xs text-white">
+                      يمكنك نسخ كود الإحالة الخاص بك مع اصدقاءك و ربح ما يصل الى
+                      ازيد من 5000 نقطة لما يتم فتح الحساب
+                    </p>
+                  </div>
+                </li>
+
+                <li class="flex items-start gap-4">
+                  <img
+                    src="./assets/images/illustrations/marketing.svg"
+                    class="size-6 shrink-0"
+                    alt=""
+                  />
+                  <div class="flex-1 space-y-1 text-center">
+                    <p class="font-bold">وسع شبكتك وسوق لخدماتك</p>
+                    <p class="text-xs text-white">
+                      بمجرد مشاركة وتوسيع شبكتك تكون لديك فرص اكبر لنجاح حملاتك
+                      الاعلانية والوصول الى جمهولا اكبر
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="px-4">
+              <button
+                type="button"
+                class="btn btn--md w-full rounded-full bg-white text-black"
+              >
+                نسخ الكود
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
