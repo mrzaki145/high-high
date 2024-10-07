@@ -33,7 +33,7 @@
 }
 
 .table th {
-  @apply whitespace-nowrap px-6 py-2 text-sm font-bold;
+  @apply whitespace-nowrap px-6 py-2 text-sm font-bold first:text-start;
 }
 
 .table .th {
@@ -57,13 +57,13 @@
 }
 
 .table td {
-  @apply max-w-sm whitespace-nowrap px-6 pb-6 pt-4 text-center;
+  @apply max-w-sm whitespace-nowrap px-6 pb-6 pt-4 text-center first:text-start;
 }
 
 /* pagination */
 
 .table-pagination {
-  @apply flex items-center justify-between text-xs;
+  @apply flex items-center justify-between border-t border-gray-100 pt-4 text-xs;
 }
 
 .table-pagination p {
