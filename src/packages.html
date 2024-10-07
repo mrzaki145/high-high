@@ -596,9 +596,16 @@
                   </div>
 
                   <div class="mx-auto w-fit">
-                    <button id="toggleCollapseButton" class="group text-sm">
-                      <span class="group-[.closed]:hidden">تفاصيل أقل</span>
-                      <span class="group-[.opened]:hidden">تفاصيل اكثر</span>
+                    <button
+                      id="toggleCollapseButton"
+                      class="opened group text-sm"
+                    >
+                      <span class="group-[.opened]:block group-[.closed]:hidden"
+                        >تفاصيل أقل</span
+                      >
+                      <span class="group-[.closed]:block group-[.opened]:hidden"
+                        >تفاصيل اكثر</span
+                      >
                       <svg class="mx-auto size-4">
                         <use
                           href="./assets/images/icons/sprite.svg#arrow-up"
