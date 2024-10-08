@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
 
 @import "tailwindcss/base";
 
@@ -11,7 +12,7 @@ body,
 }
 
 body {
-  @apply font-tajawal font-medium text-black;
+  @apply font-almarai font-medium text-black;
   @apply overflow-auto !important;
 }
 

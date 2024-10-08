@@ -32,6 +32,7 @@ module.exports = {
 
     fontFamily: {
       tajawal: ["Tajawal", "sans-serif"],
+      almarai: ["Almarai", "sans-serif"]
     },
 
     colors: {
