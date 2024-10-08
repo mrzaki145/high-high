@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High-High &mdash; Login</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+
+    <!-- js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/preline@2.3.0/dist/preline.min.js"
+    ></script>
+    <script defer src="./assets/scripts/main.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="masterlayout">
+        <aside
+          id="aside"
+          class="aside hs-overlay-backdrop-open:bg-black/15 lg:hs-overlay-backdrop-open:hidden"
+        >
+          <div class="aside__header">
+            <div class="aside__logo">
+              <img src="./assets/images/logo.svg" class="lg" alt="" />
+              <img src="./assets/images/logo-sm.svg" class="sm" alt="" />
+            </div>
+
+            <button
+              type="button"
+              aria-label="Toggle navigation"
+              aria-controls="aside"
+              data-hs-overlay="#aside"
+              data-hs-overlay-options='{ "hiddenClass": "open--full" }'
+            >
+              <svg class="size-6 text-black">
+                <use href="./assets/images/icons/sprite.svg#menu-line"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="aside__body">
+            <div>
+              <p class="aside__title">لوحة الاجراءات</p>
+
+              <div class="aside__list">
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#house"></use>
+                  </svg>
+
+                  <span class="aside__link-text">عناصر سريعة</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#ads"></use>
+                  </svg>
+
+                  <span class="aside__link-text">حملات اعلانية</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#terms"></use>
+                  </svg>
+
+                  <span class="aside__link-text">الفواتير والمدفوعات</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use
+                      href="./assets/images/icons/sprite.svg#analytics"
+                    ></use>
+                  </svg>
+
+                  <span class="aside__link-text">احصائيات مفصلة</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#discount"></use>
+                  </svg>
+
+                  <span class="aside__link-text">المنتجات</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#add-line"></use>
+                  </svg>
+
+                  <span class="aside__link-text">انشاء المحتوى</span>
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <p class="aside__title">الاعدادات</p>
+
+              <div class="aside__list">
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#user"></use>
+                  </svg>
+
+                  <span class="aside__link-text">التحدث مع العملاء</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#support"></use>
+                  </svg>
+
+                  <span class="aside__link-text">التواصل مع الدعم</span>
+                </a>
+
+                <a href="#" class="aside__link">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#terms"></use>
+                  </svg>
+
+                  <span class="aside__link-text">الشروط والاحكام</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="aside__footer">
+            <div class="hs-dropdown relative [--strategy:absolute]">
+              <button
+                type="button"
+                class="hs-overlay-toggle aside__link aside__btn"
+              >
+                <span class="aside__link-icon-wrapper">
+                  <svg class="aside__link-icon">
+                    <use href="./assets/images/icons/sprite.svg#user"></use>
+                  </svg>
+                </span>
+
+                <span class="aside__link-text">anas.yahya@gmail.com</span>
+              </button>
+
+              <div class="hs-dropdown-menu settings-drowdown hidden">
+                <p class="aside__title mb-2 mt-1">حساب المعلن</p>
+
+                <div class="aside__list">
+                  <a href="#" class="aside__link">
+                    <svg class="aside__link-icon">
+                      <use
+                        href="./assets/images/icons/sprite.svg#settings"
+                      ></use>
+                    </svg>
+
+                    <span class="aside__link-text">الاعدادات العامة</span>
+                  </a>
+
+                  <a href="#" class="aside__link">
+                    <svg class="aside__link-icon">
+                      <use href="./assets/images/icons/sprite.svg#logout"></use>
+                    </svg>
+
+                    <span class="aside__link-text">انهاء الجلسة</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <main class="main">
+          <div class="topbar">
+            <div
+              class="hs-dropdown relative flex items-center [--auto-close:inside] [--placement:bottom-center]"
+            >
+              <button
+                type="button"
+                class="hs-dropdown-toggle notifications-dropdown"
+              >
+                <svg>
+                  <use
+                    href="./assets/images/icons/sprite.svg#notification-line"
+                  ></use>
+                </svg>
+              </button>
+
+              <div
+                class="hs-dropdown-menu hidden w-full max-w-80 space-y-3 rounded-xl bg-white py-6 opacity-0 shadow-lg transition-opacity hs-dropdown-open:opacity-100"
+              >
+                <div class="flex items-center justify-between px-3">
+                  <div class="flex items-center gap-1.5">
+                    <p class="text-sm font-semibold">الاشعارات</p>
+                    <span
+                      class="inline-flex size-5 shrink-0 items-center justify-center rounded-full bg-blue text-xs text-white"
+                      >3</span
+                    >
+                  </div>
+
+                  <button type="button" class="text-xs font-medium text-blue">
+                    تمييز كمقروء
+                  </button>
+                </div>
+
+                <div class="flex gap-1 px-3">
+                  <button
+                    type="button"
+                    class="h-8 flex-1 rounded-md bg-white text-xs transition-colors hover:bg-gray-50 aria-pressed:bg-blue-50 aria-pressed:text-blue"
+                    aria-pressed="true"
+                  >
+                    الكل
+                  </button>
+                  <button
+                    type="button"
+                    class="h-8 flex-1 rounded-md bg-white text-xs transition-colors hover:bg-gray-50 aria-pressed:bg-blue-50 aria-pressed:text-blue"
+                  >
+                    مقروءة
+                  </button>
+                  <button
+                    type="button"
+                    class="h-8 flex-1 rounded-md bg-white text-xs transition-colors hover:bg-gray-50 aria-pressed:bg-blue-50 aria-pressed:text-blue"
+                  >
+                    غير مقروءة
+                  </button>
+                </div>
+
+                <div
+                  class="scrollbar max-h-[450px] divide-y divide-gray-100 overflow-auto"
+                >
+                  <div class="flex items-start gap-3 bg-blue-50/50 px-3 py-2">
+                    <span
+                      class="inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-[#9DDDD5]"
+                    >
+                      <svg class="size-4">
+                        <use
+                          href="./assets/images/icons/sprite.svg#entertainment"
+                        ></use>
+                      </svg>
+                    </span>
+
+                    <div class="flex-1">
+                      <p class="mb-1 text-xs font-semibold">
+                        تم إضافة نقاط الدعوة!
+                      </p>
+                      <p class="mb-2 text-xs text-gray-400">
+                        قمت بدعوة مشتركين بنجاح
+                      </p>
+                      <p
+                        class="mb-2 border-s-2 border-primary-400 px-2 py-1.5 text-xs text-gray-600"
+                      >
+                        محل الشكولاطة بدأ استخدام HighHigh بفضل إحالتك! لقد كسبت
+                        <span class="text-primary">600 نقطة</span>. استمر في
+                        العمل الرائع وواصل كسب المزيد من المكافآت!
+                      </p>
+
+                      <p class="text-sm font-semibold text-gray-400">
+                        يوم واحد
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-3 bg-blue-50/50 px-3 py-2">
+                    <span
+                      class="inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-[#EDB37E]"
+                    >
+                      <svg class="size-4">
+                        <use
+                          href="./assets/images/icons/sprite.svg#bills"
+                        ></use>
+                      </svg>
+                    </span>
+
+                    <div class="flex-1">
+                      <p class="mb-1 text-xs font-semibold">
+                        نجاح شراء الباقة!
+                      </p>
+                      <p class="mb-2 text-xs text-gray-400">
+                        قمت بدعوة مشتركين بنجاح
+                      </p>
+                      <p
+                        class="mb-2 border-s-2 border-primary-400 px-2 py-1.5 text-xs text-gray-600"
+                      >
+                        محل الشكولاطة بدأ استخدام HighHigh بفضل إحالتك! لقد كسبت
+                        <span class="text-primary">600 نقطة</span>. استمر في
+                        العمل الرائع وواصل كسب المزيد من المكافآت!
+                      </p>
+
+                      <p class="text-sm font-semibold text-gray-400">
+                        يوم واحد
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-3 bg-blue-50/50 px-3 py-2">
+                    <span
+                      class="inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-red"
+                    >
+                      <svg class="size-4 text-white">
+                        <use
+                          href="./assets/images/icons/sprite.svg#close-line"
+                        ></use>
+                      </svg>
+                    </span>
+
+                    <div class="flex-1">
+                      <p class="mb-1 text-xs font-semibold">فشل شحن المحفظة!</p>
+                      <p class="mb-2 text-xs text-gray-400">
+                        قمت بدعوة مشتركين بنجاح
+                      </p>
+                      <p
+                        class="mb-2 border-s-2 border-primary-400 px-2 py-1.5 text-xs text-gray-600"
+                      >
+                        محل الشكولاطة بدأ استخدام HighHigh بفضل إحالتك! لقد كسبت
+                        <span class="text-primary">600 نقطة</span>. استمر في
+                        العمل الرائع وواصل كسب المزيد من المكافآت!
+                      </p>
+
+                      <p class="text-sm font-semibold text-gray-400">
+                        يوم واحد
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="./notification.html"
+                  class="mx-auto flex h-10 w-fit items-center justify-center rounded-full bg-gray-50 px-6 text-xs text-blue transition-colors hover:bg-gray-100"
+                  >عرض كل الاشعارات</a
+                >
+              </div>
+            </div>
+
+            <button type="button" class="lang-dropdown">
+              <svg class="globe">
+                <use href="./assets/images/icons/sprite.svg#global-line"></use>
+              </svg>
+              EN
+              <svg class="arrow">
+                <use href="./assets/images/icons/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+
+            <button class="btn btn--gray btn--sm rounded-full" type="button">
+              <svg>
+                <use href="./assets/images/icons/sprite.svg#support"></use>
+              </svg>
+
+              تواصل مع الدعم
+            </button>
+          </div>
+
+          <div class="main__content">
+            <div class="main__header">
+              <h1 class="main__title">الاشعارات</h1>
+
+              <ol class="breadcrump">
+                <li class="breadcrump__item">
+                  <a class="breadcrump__link" href="#"> الرئيسية </a>
+                  <svg>
+                    <use
+                      href="./assets/images/icons/sprite.svg#arrow-left"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="breadcrump__item">
+                  <a class="breadcrump__link" href="#" aria-current="page">
+                    الاشعارات
+                  </a>
+                  <svg>
+                    <use
+                      href="./assets/images/icons/sprite.svg#arrow-left"
+                    ></use>
+                  </svg>
+                </li>
+              </ol>
+            </div>
+
+            <div class="main__body flex flex-col justify-between gap-14">
+              <div class="space-y-2 divide-y divide-gray-100">
+                <div
+                  class="flex items-start gap-3 rounded-xl bg-primary-50 p-4"
+                >
+                  <span
+                    class="inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-primary-400"
+                  >
+                    <svg class="size-4 text-white">
+                      <use
+                        href="./assets/images/icons/sprite.svg#entertainment"
+                      ></use>
+                    </svg>
+                  </span>
+
+                  <div class="flex-1">
+                    <p class="mb-1 text-xs font-semibold">
+                      تم إضافة نقاط الدعوة!
+                    </p>
+                    <p class="mb-2 text-xs text-gray-400">
+                      قمت بدعوة مشتركين بنجاح
+                    </p>
+                    <p
+                      class="mb-2 border-s-2 border-primary-400 px-2 py-1.5 text-xs text-gray-600"
+                    >
+                      محل الشكولاطة بدأ استخدام HighHigh بفضل إحالتك! لقد كسبت
+                      <span class="text-primary">600 نقطة</span>. استمر في العمل
+                      الرائع وواصل كسب المزيد من المكافآت!
+                    </p>
+
+                    <p class="text-xs text-gray-400">يوم واحد</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 rounded-xl bg-white/50 p-4">
+                  <span
+                    class="inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-yellow-400"
+                  >
+                    <svg class="size-4 text-white">
+                      <use href="./assets/images/icons/sprite.svg#bills"></use>
+                    </svg>
+                  </span>
+
+                  <div class="flex-1">
+                    <p class="mb-1 text-xs font-semibold">نجاح شراء الباقة!</p>
+                    <p class="mb-2 text-xs text-gray-400">
+                      قمت بدعوة مشتركين بنجاح
+                    </p>
+                    <p
+                      class="mb-2 border-s-2 border-primary-400 px-2 py-1.5 text-xs text-gray-600"
+                    >
+                      محل الشكولاطة بدأ استخدام HighHigh بفضل إحالتك! لقد كسبت
+                      <span class="text-primary">600 نقطة</span>. استمر في العمل
+                      الرائع وواصل كسب المزيد من المكافآت!
+                    </p>
+
+                    <p class="text-xs text-gray-400">يوم واحد</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 rounded-xl bg-white/50 p-4">
+                  <span
+                    class="inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-red"
+                  >
+                    <svg class="size-4 text-white">
+                      <use
+                        href="./assets/images/icons/sprite.svg#close-line"
+                      ></use>
+                    </svg>
+                  </span>
+
+                  <div class="flex-1">
+                    <p class="mb-1 text-xs font-semibold">فشل شحن المحفظة!</p>
+                    <p class="mb-2 text-xs text-gray-400">
+                      قمت بدعوة مشتركين بنجاح
+                    </p>
+                    <p
+                      class="mb-2 border-s-2 border-primary-400 px-2 py-1.5 text-xs text-gray-600"
+                    >
+                      محل الشكولاطة بدأ استخدام HighHigh بفضل إحالتك! لقد كسبت
+                      <span class="text-primary">600 نقطة</span>. استمر في العمل
+                      الرائع وواصل كسب المزيد من المكافآت!
+                    </p>
+
+                    <p class="text-xs text-gray-400">يوم واحد</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 rounded-xl bg-white/50 p-4">
+                  <span
+                    class="inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-green"
+                  >
+                    <svg class="size-4 text-white">
+                      <use href="./assets/images/icons/sprite.svg#ad-mic"></use>
+                    </svg>
+                  </span>
+
+                  <div class="flex-1">
+                    <p class="mb-1 text-xs font-semibold">
+                      تمت الموافقة على الإعلان!
+                    </p>
+                    <p class="mb-2 text-xs text-gray-400">
+                      قمت بدعوة مشتركين بنجاح
+                    </p>
+                    <p
+                      class="mb-2 border-s-2 border-primary-400 px-2 py-1.5 text-xs text-gray-600"
+                    >
+                      محل الشكولاطة بدأ استخدام HighHigh بفضل إحالتك! لقد كسبت
+                      <span class="text-primary">600 نقطة</span>. استمر في العمل
+                      الرائع وواصل كسب المزيد من المكافآت!
+                    </p>
+
+                    <p class="text-xs text-gray-400">يوم واحد</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 rounded-xl bg-white/50 p-4">
+                  <span
+                    class="inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-yellow-400"
+                  >
+                    <svg class="size-4 text-white">
+                      <use href="./assets/images/icons/sprite.svg#ad-mic"></use>
+                    </svg>
+                  </span>
+
+                  <div class="flex-1">
+                    <p class="mb-1 text-xs font-semibold">
+                      تمت الموافقة على الإعلان!
+                    </p>
+                    <p class="mb-2 text-xs text-gray-400">
+                      قمت بدعوة مشتركين بنجاح
+                    </p>
+                    <p
+                      class="mb-2 border-s-2 border-primary-400 px-2 py-1.5 text-xs text-gray-600"
+                    >
+                      محل الشكولاطة بدأ استخدام HighHigh بفضل إحالتك! لقد كسبت
+                      <span class="text-primary">600 نقطة</span>. استمر في العمل
+                      الرائع وواصل كسب المزيد من المكافآت!
+                    </p>
+
+                    <p class="text-xs text-gray-400">يوم واحد</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 rounded-xl bg-white/50 p-4">
+                  <span
+                    class="inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-primary-400"
+                  >
+                    <svg class="size-4 text-white">
+                      <use
+                        href="./assets/images/icons/sprite.svg#investments"
+                      ></use>
+                    </svg>
+                  </span>
+
+                  <div class="flex-1">
+                    <p class="mb-1 text-xs font-semibold">
+                      تمت الموافقة على الإعلان!
+                    </p>
+                    <p class="mb-2 text-xs text-gray-400">
+                      قمت بدعوة مشتركين بنجاح
+                    </p>
+                    <p
+                      class="mb-2 border-s-2 border-primary-400 px-2 py-1.5 text-xs text-gray-600"
+                    >
+                      محل الشكولاطة بدأ استخدام HighHigh بفضل إحالتك! لقد كسبت
+                      <span class="text-primary">600 نقطة</span>. استمر في العمل
+                      الرائع وواصل كسب المزيد من المكافآت!
+                    </p>
+
+                    <p class="text-xs text-gray-400">يوم واحد</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
