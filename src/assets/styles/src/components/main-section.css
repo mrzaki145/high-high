@@ -1,5 +1,5 @@
 .main {
-  @apply flex h-full flex-1 flex-col max-lg:ms-16 lg:ms-52;
+  @apply flex flex-1 flex-col max-lg:ms-16 lg:ms-52;
   width: calc(100% - theme(width.16));
 }
 @screen lg {
