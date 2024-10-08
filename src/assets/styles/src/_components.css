@@ -96,7 +96,7 @@
 }
 
 .ad-preview__footer button {
-  @apply inline-flex items-center gap-1 rounded-full px-2 py-1 text-xs aria-pressed:text-yellow;
+  @apply inline-flex items-center gap-1 rounded-full px-2 py-1 text-xs aria-pressed:text-primary;
 }
 
 .ad-preview__footer button svg {
